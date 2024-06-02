@@ -1,0 +1,193 @@
+body {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background: #dab137;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.column {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem;
+}
+
+#headline {
+  background: #f2e3e3;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 12px;
+  display: flex;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+#projects .column-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+  gap: 1rem;
+}
+
+#projects .column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+  gap: 1rem;
+}
+
+.profile-pic {
+  text-align: center;
+  padding: 1rem;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+.project-card {
+  background: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  justify-content: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.project-card a {
+  display: flex;
+  margin: 0.5rem 0;
+  color: #0099ff;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.skills-icons {
+  text-align: center;
+  padding: 20px;
+}
+
+.skills-icons i {
+  font-size: 40px;
+  margin: 10px;
+  color: #4a90e2;
+}
+
+#contact {
+  background: #0099ff;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+#contact a i {
+  margin-right: 8px;
+}
+
+#contact a:hover {
+  color: #dab137;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
