@@ -1,7 +1,7 @@
 # Portofolio
 This repository serves as a portfolio showcase for the first year of my frontend development studies.
 
-<img width="1424" alt="Skjermbilde 2024-06-07 kl  09 55 23" src="https://github.com/AnnaAaBrekke/portofolio/assets/143593909/e3b07cc7-6aff-4aa0-a544-3d92a177ece7">
+<img width="1438" alt="Skjermbilde 2024-06-07 kl  13 14 48" src="https://github.com/AnnaAaBrekke/portofolio/assets/143593909/283670fa-afd5-4823-909e-a89ca851c07e">
 
 # 👋 Hey, I'm Anna Aasprong Brekke 
 
