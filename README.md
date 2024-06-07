@@ -3,8 +3,6 @@ This repository serves as a portfolio showcase for the first year of my frontend
 
 <img width="1424" alt="Skjermbilde 2024-06-07 kl  09 55 23" src="https://github.com/AnnaAaBrekke/portofolio/assets/143593909/e3b07cc7-6aff-4aa0-a544-3d92a177ece7">
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,discord,figma,netlify,github)](https://skillicons.dev)
-
 # 👋 Hey, I'm Anna Aasprong Brekke 
 
 ## 🌼 About Me 
@@ -26,6 +24,9 @@ I'm a passionate frontend developer student who has just completed my first year
 ![My GitHub stats](https://github-readme-stats.vercel.app/api?username=AnnaAaBrekke&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaAaBrekke&layout=compact&theme=radical)
 
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,discord,figma,netlify,github)](https://skillicons.dev)
+
 ## 📸 My Image Portfolio
 - [Wirestock Portfolio](https://wirestock.io/annaaab)
+
 
