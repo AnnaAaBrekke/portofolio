@@ -1,7 +1,7 @@
 # Portofolio
-This repository serves as a comprehensive documentation and portfolio showcase for three major projects completed during the first year of my frontend development studies. 
+This repository serves as a portfolio showcase for the first year of my frontend development studies.
 
-![github-header-image](https://github.com/AnnaAaBrekke/AnnaAaBrekke/assets/143593909/cf6546ce-6dc4-45ff-b60f-b3f1f3a8a6e5)
+<img width="1424" alt="Skjermbilde 2024-06-07 kl  09 55 23" src="https://github.com/AnnaAaBrekke/portofolio/assets/143593909/e3b07cc7-6aff-4aa0-a544-3d92a177ece7">
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,discord,figma,netlify,github)](https://skillicons.dev)
 
@@ -23,8 +23,8 @@ I'm a passionate frontend developer student who has just completed my first year
 [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/annabrekke/)
 
 ## 📊 GitHub Stats
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaAaBrekke&layout=compact&theme=radical)
 ![My GitHub stats](https://github-readme-stats.vercel.app/api?username=AnnaAaBrekke&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaAaBrekke&layout=compact&theme=radical)
 
 ## 📸 My Image Portfolio
 - [Wirestock Portfolio](https://wirestock.io/annaaab)
