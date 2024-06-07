@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #75ab9a;
+  --secondary-color: #29a0b1;
+  --accent-color: #167d7f;
+}
+
 body {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
@@ -16,7 +22,7 @@ body {
 
 /* Nav Header */
 header {
-  background-color: #75ab9a;
+  background-color: var(--primary-color);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -63,7 +69,7 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: #75ab9a;
+  background-color: var(--primary-color);
   transform: skewY(3deg);
   z-index: -1;
   border-radius: 8px;
@@ -73,11 +79,11 @@ nav ul li a:hover {
   font-size: 70px;
   font-weight: 700;
   background-image: conic-gradient(
-    #75ab9a 30%,
-    #29a0b1 40%,
-    #29a0b1 70%,
-    #167d7f 80%,
-    #75ab9a
+    var(--primary-color) 30%,
+    var(--secondary-color) 40%,
+    var(--secondary-color) 70%,
+    var(--accent-color) 80%,
+    var(--primary-color)
   );
   color: transparent;
   background-clip: text;
@@ -93,12 +99,14 @@ nav ul li a:hover {
   margin-left: 3rem;
   text-align: right;
   padding: 0;
+  max-width: 100%;
 }
 
 .skills-icons i {
   font-size: 40px;
   margin: 18px;
-  color: #167d7f;
+  color: var(--accent-color);
+  max-width: 100%; /* Limit the width of the icons */
 }
 
 /* About Me */
@@ -108,7 +116,6 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: left;
-  gap: 12px;
 }
 
 .about-me-column {
@@ -171,6 +178,7 @@ nav ul li a:hover {
 
 .about-me-column p {
   font-size: 20px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -283,7 +291,7 @@ nav ul li a:hover {
 
 /* Contact */
 #contact {
-  background: #167d7f;
+  background: var(--accent-color);
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -318,6 +326,62 @@ footer .column {
   margin-right: 2px;
 }
 
+/* Loader */
+#loadingInd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+  animation: l26 1s infinite steps(12);
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: radial-gradient(
+        closest-side at 50% 12.5%,
+        var(--primary-color) 96%,
+        #0000
+      )
+      50% 0/20% 80% repeat-y,
+    radial-gradient(
+        closest-side at 12.5% 50%,
+        var(--secondary-color) 96%,
+        #0000
+      )
+      0 50%/80% 20% repeat-x;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  transform: rotate(30deg);
+}
+
+.loader:after {
+  transform: rotate(60deg);
+}
+
+@keyframes l26 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 /* Media Queries */
 @media (max-width: 1100px) {
   .column {
@@ -340,6 +404,10 @@ footer .column {
     margin: 1rem;
   }
 
+  #headline .skills-icons {
+    margin-left: 0;
+  }
+
   .photo-gallery img {
     width: calc(50% - 10px);
   }
@@ -349,6 +417,7 @@ footer .column {
   #headline h1 {
     font-size: 40px;
   }
+
   .photo-gallery img {
     width: 100%;
   }
@@ -358,12 +427,34 @@ footer .column {
     padding: 0.5rem;
   }
 
-  #headline .skills-icons {
-    margin-left: 0;
+  .headline-column {
+    padding: 0;
   }
 
   footer .column {
     font-size: 14px;
     text-align: center;
+  }
+
+  #photos .column,
+  #AIimg .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .photo-gallery img {
+    width: calc(50% - 10px);
+  }
+
+  #AIimg .photo-gallery a {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 500px) {
+  #headline .skills-icons {
+    overflow: hidden;
   }
 }
