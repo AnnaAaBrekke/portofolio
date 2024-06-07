@@ -116,6 +116,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: left;
+  gap: 4px;
 }
 
 .about-me-column {
