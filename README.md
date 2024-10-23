@@ -100,8 +100,8 @@ When making a commit, Husky runs a pre-commit hook that triggers lint-staged. Th
 
 ## 📊 GitHub Stats
 
-![My GitHub stats](https://github-readme-stats.vercel.app/api?username=AnnaAaBrekke&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaAaBrekke&layout=compact&theme=radical)
+![My GitHub stats](https://github-readme-stats.vercel.app/api?username=AnnaAaBrekke&show_icons=true&theme=radical&cache_seconds=1800)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaAaBrekke&layout=compact&theme=radical&cache_seconds=1800)
 
 ## 📸 My Image Portfolio
 
