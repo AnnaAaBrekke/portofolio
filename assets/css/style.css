@@ -2,6 +2,8 @@
   --primary-color: #75ab9a;
   --secondary-color: #29a0b1;
   --accent-color: #167d7f;
+  --button-color: #68aeb0;
+  --button-hover-color: #00666f;
 }
 
 body {
@@ -333,6 +335,24 @@ footer .column {
   margin-right: 2px;
 }
 
+/* Button */
+.btn {
+  background-color: var(--button-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-color);
+}
+
 /* Loader */
 #loadingInd {
   position: fixed;
@@ -460,5 +480,38 @@ footer .column {
 @media (max-width: 500px) {
   #headline .skills-icons {
     overflow: hidden;
+  }
+}
+
+@media (max-width: 375px) {
+  #headline h1 {
+    font-size: 36px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .skills-icons i {
+    font-size: 32px;
+  }
+
+  .about-me-column {
+    font-size: 18px;
+  }
+
+  .photo-gallery img {
+    width: calc(50% - 10px);
+  }
+
+  .headline-column {
+    flex-direction: column;
+    padding: 1rem 0;
   }
 }
