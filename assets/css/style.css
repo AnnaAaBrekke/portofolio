@@ -2,6 +2,8 @@
   --primary-color: #75ab9a;
   --secondary-color: #29a0b1;
   --accent-color: #167d7f;
+  --button-color: #68aeb0;
+  --button-hover-color: #00666f;
 }
 
 body {
@@ -331,6 +333,24 @@ footer .column {
   padding: 1rem;
   text-align: right;
   margin-right: 2px;
+}
+
+/* Button */
+.btn {
+  background-color: var(--button-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-color);
 }
 
 /* Loader */
