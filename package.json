@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint .",
+    "lint": "eslint",
     "format": "prettier --write .",
     "prepare": "husky install"
   },
@@ -22,12 +22,22 @@
     "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.11.0",
     "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "vite": "^5.4.10"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   }
 }

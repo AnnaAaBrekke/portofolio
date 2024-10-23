@@ -211,7 +211,9 @@ nav ul li a:hover {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: calc(33.33% - 50px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -267,7 +269,9 @@ nav ul li a:hover {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 #AIimg .photo-gallery a {
@@ -277,7 +281,9 @@ nav ul li a:hover {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 #AIimg .photo-gallery img {
@@ -352,11 +358,8 @@ footer .column {
 .loader,
 .loader:before,
 .loader:after {
-  background: radial-gradient(
-        closest-side at 50% 12.5%,
-        var(--primary-color) 96%,
-        #0000
-      )
+  background:
+    radial-gradient(closest-side at 50% 12.5%, var(--primary-color) 96%, #0000)
       50% 0/20% 80% repeat-y,
     radial-gradient(
         closest-side at 12.5% 50%,
