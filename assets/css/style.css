@@ -482,3 +482,37 @@ footer .column {
     overflow: hidden;
   }
 }
+
+@media (max-width: 375px) {
+  
+  #headline h1 {
+    font-size: 36px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .skills-icons i {
+    font-size: 32px;
+  }
+
+  .about-me-column {
+    font-size: 18px;
+  }
+
+  .photo-gallery img {
+    width: calc(50% - 10px);
+  }
+
+  .headline-column {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+}
