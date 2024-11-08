@@ -108,7 +108,40 @@ nav ul li a:hover {
   font-size: 40px;
   margin: 18px;
   color: var(--accent-color);
-  max-width: 100%; /* Limit the width of the icons */
+  max-width: 100%;
+}
+
+/* Skills Section Styling */
+#Skills {
+  background-color: #d4f9ea;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#Skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+#Skills p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.skills-icons img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
+}
+
+.skills-icons img:hover {
+  transform: scale(1.05);
 }
 
 /* About Me */
