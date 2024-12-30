@@ -29,12 +29,12 @@
     <header
       class="bg-gradient-to-r from-[#75ab9a] via-[#29a0b1] to-[#167d7f] text-white p-4 shadow-lg"
     >
-      <nav class="container mx-auto flex justify-between items-center">
-        <nav class="flex space-x-4 text-white">
+      <nav class="container flex justify-between items-center">
+        <nav class="flex space-x-4 text-white ml-6">
           <ul class="flex space-x-4">
+            <li><a href="#timeline" class="hover:underline">My Journey</a></li>
             <li><a href="#projects" class="hover:underline">Projects</a></li>
-            <li><a href="#photos" class="hover:underline">Photos</a></li>
-            <li><a href="#AIimg" class="hover:underline">AI</a></li>
+            <li><a href="#photos" class="hover:underline">Media</a></li>
             <li><a href="#contact" class="hover:underline">Contact</a></li>
           </ul>
         </nav>
@@ -68,6 +68,13 @@
       />
       <h2 class="text-lg font-medium">Anna Aasprong Brekke</h2>
       <p class="text-sm text-gray-600 text-center mt-2">26 years</p>
+      <p
+        class="text-sm text-gray-600 text-center mt-2 flex items-center justify-center"
+      >
+        <i class="fas fa-map-marker-alt text-[#167d7f] mr-2"></i>
+        Drammen, Norway
+      </p>
+
       <p class="text-sm text-gray-500 text-center mt-2">
         A passionate Frontend Developer student and athlete with a background in
         education.
@@ -230,13 +237,13 @@
       <main class="flex-1 p-6 pr-32">
         <section
           id="header"
-          class="text-center mb-16 relative overflow-hidden bg-gradient-to-br from-[#167d7f] to-[#29a0b1] text-white p-8 rounded-lg shadow-lg"
+          class="text-center mb-6 relative overflow-hidden bg-gradient-to-br from-[#167d7f] to-[#29a0b1] text-white p-8 rounded-lg shadow-lg"
         >
           <div
             class="mt-4 text-lg grid grid-cols-1 md:grid-cols-4 gap-6 items-center"
           >
             <div class="col-span-1 md:col-span-4 text-center">
-              <h1 class="text-5xl font-extrabold p-4">Anna Aasprong Brekke</h1>
+              <h1 class="text-5xl font-extrabold p-2">Anna Aasprong Brekke</h1>
             </div>
             <div
               class="col-span-1 md:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4"
@@ -274,6 +281,142 @@
               >
                 <p class="text-[#167d7f] font-semibold text-lg">
                   Image Creator
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="timeline" class="p-8 bg-gray-100">
+          <!-- Education Timeline -->
+          <div class="mb-16">
+            <h3 class="text-2xl font-semibold text-[#167d7f] mb-8">
+              Education
+            </h3>
+            <div
+              class="relative lg:flex lg:flex-wrap lg:gap-8 lg:items-start border-l lg:border-l-0 lg:border-t border-gray-300"
+            >
+              <!-- Timeline Item -->
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Noroff College
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Frontend Developer | Aug 2023 - Jun 2025
+                </p>
+              </div>
+              <!-- Timeline Item -->
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Universitetet i Sørøst-Norge
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Master's Degree in Primary School Education | Aug 2018 - Jul
+                  2023
+                </p>
+              </div>
+              <!-- Timeline Item -->
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Drammen Toppidrett VGs
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  High School | Aug 2015 - Jul 2018
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Work Timeline -->
+          <div>
+            <h3 class="text-2xl font-semibold text-[#167d7f] mb-8">
+              Work Experience
+            </h3>
+            <div
+              class="relative lg:flex lg:flex-wrap lg:gap-8 lg:items-start border-l lg:border-l-0 lg:border-t border-gray-300"
+            >
+              <!-- Timeline Item -->
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Lier Videregående skole
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Teacher in High School | Jan 2022 - Present
+                </p>
+              </div>
+              <!-- Timeline Item -->
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Åskollen Barneskole
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Teaching Assistant | Jan 2017 – Jun 2022
+                </p>
+              </div>
+              <!-- Timeline Item -->
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Drammen kommune: Sommerskole
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Activity Leader | Jun 2019 - Aug 2021
+                </p>
+              </div>
+              <!-- Timeline Item -->
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Digitale Læringsverkstedet
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Student Assistant | Aug 2019 - Nov 2019
+                </p>
+              </div>
+              <div
+                class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              >
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                ></span>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Torshov Sport
+                </h3>
+                <p class="text-gray-600 text-sm mb-2">
+                  Sales Associate | Mar 2016 - Aug 2018
                 </p>
               </div>
             </div>
@@ -440,7 +583,7 @@
           </div>
         </section>
 
-        <section id="photos" class="mb-16 p-2">
+        <section id="media" class="mb-16 p-2">
           <h2 class="text-3xl font-bold text-center mb-8 text-gray-700">
             My Captured Photos
           </h2>
