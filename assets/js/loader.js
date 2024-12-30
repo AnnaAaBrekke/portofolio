@@ -1,19 +1,55 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const loader = document.getElementById("loadingInd");
+// export function createCardSkeleton() {
+//   const skeleton = document.createElement("div");
+//   skeleton.classList.add(
+//     "bg-white",
+//     "rounded-lg",
+//     "shadow-md",
+//     "p-4",
+//     "animate-pulse"
+//   );
 
-  function showLoader() {
-    loader.style.display = "flex";
-  }
+//   const header = document.createElement("div");
+//   header.classList.add("w-2/3", "h-4", "bg-gray-300", "rounded", "mb-2");
+//   skeleton.appendChild(header);
 
-  function hideLoader() {
-    loader.style.display = "none";
-  }
+//   for (let i = 0; i < 2; i++) {
+//     const bodyLine = document.createElement("div");
+//     bodyLine.classList.add("w-full", "h-8", "bg-gray-300", "rounded", "mb-2");
+//     skeleton.appendChild(bodyLine);
+//   }
 
-  // Show loader on page load
-  showLoader();
+//   const footer = document.createElement("div");
+//   footer.classList.add("w-1/2", "h-8", "bg-gray-300", "rounded");
+//   skeleton.appendChild(footer);
 
-  // Hide loader when everything is fully loaded
-  window.addEventListener("load", function () {
-    hideLoader();
-  });
-});
+//   return skeleton;
+// }
+
+// export function showCardLoaders(containerId, count = 6) {
+//   const container = document.getElementById(containerId);
+
+//   if (!container) {
+//     console.error(`Container with ID "${containerId}" not found.`);
+//     return;
+//   }
+
+//   // Clear the container before adding loaders
+//   container.innerHTML = "";
+
+//   for (let i = 0; i < count; i++) {
+//     const loader = createCardSkeleton();
+//     loader.classList.add("card-loader"); // Add a shared class for all loaders
+//     container.appendChild(loader);
+//   }
+// }
+// export function hideCardLoaders(containerId) {
+//   const container = document.getElementById(containerId);
+//   if (!container) {
+//     console.error(`Container with ID "${containerId}" not found.`);
+//     return;
+//   }
+
+//   // Select all elements with the "card-loader" class and remove them
+//   const loaders = container.querySelectorAll(".card-loader");
+//   loaders.forEach((loader) => loader.remove());
+// }

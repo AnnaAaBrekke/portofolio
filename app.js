@@ -1,37 +1,32 @@
-import "./assets/styles/main.scss";
-
-const dropdownButton = document.getElementById("profileDropdown");
-const sidebarMenu = document.getElementById("sidebarMenu");
-const closeSidebar = document.getElementById("closeSidebar");
-
-dropdownButton.addEventListener("click", () => {
-  sidebarMenu.classList.toggle("hidden");
-});
-
-closeSidebar.addEventListener("click", () => {
-  sidebarMenu.classList.add("hidden");
-});
-
 document.addEventListener("DOMContentLoaded", () => {
-  const sidebar = document.getElementById("skillsSidebar");
-  const footer = document.getElementById("footer");
+  // Dropdown functionality
+  const dropdownButton = document.getElementById("profileDropdown");
+  const sidebarMenu = document.getElementById("sidebarMenu");
+  const closeSidebar = document.getElementById("closeSidebar");
 
-  const sidebarHeight = sidebar.offsetHeight;
-  const footerOffsetTop = footer.offsetTop;
+  if (dropdownButton && sidebarMenu && closeSidebar) {
+    dropdownButton.addEventListener("click", () => {
+      const isHidden = sidebarMenu.classList.contains("hidden");
+      if (isHidden) {
+        sidebarMenu.classList.remove("hidden");
+      } else {
+        sidebarMenu.classList.add("hidden");
+      }
+    });
 
-  window.addEventListener("scroll", () => {
-    const scrollPosition = window.scrollY + window.innerHeight;
+    closeSidebar.addEventListener("click", () => {
+      sidebarMenu.classList.add("hidden");
+    });
 
-    if (scrollPosition >= footerOffsetTop) {
-      // Fix the sidebar to stop at the footer
-      sidebar.classList.remove("fixed", "top-24");
-      sidebar.classList.add("absolute");
-      sidebar.style.top = `${footerOffsetTop - sidebarHeight}px`;
-    } else {
-      // Restore fixed position when not touching the footer
-      sidebar.classList.add("fixed", "top-24");
-      sidebar.classList.remove("absolute");
-      sidebar.style.top = "";
-    }
-  });
+    document.addEventListener("click", (event) => {
+      if (
+        !sidebarMenu.contains(event.target) &&
+        !dropdownButton.contains(event.target)
+      ) {
+        sidebarMenu.classList.add("hidden");
+      }
+    });
+  } else {
+    console.error("Dropdown elements not found! Check your HTML IDs.");
+  }
 });
