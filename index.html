@@ -26,9 +26,8 @@
   </head>
 
   <body class="bg-gray-100 font-sora text-gray-800">
-    <!-- Header -->
     <header
-      class="bg-gradient-to-r from-[#75ab9a] via-[#29a0b1] to-[#167d7f] text-white py-4 px-3 shadow-lg"
+      class="bg-gradient-to-r from-[#75ab9a] via-[#29a0b1] to-[#167d7f] text-white p-4 shadow-lg"
     >
       <nav class="container mx-auto flex justify-between items-center">
         <nav class="flex space-x-4 text-white">
@@ -227,36 +226,55 @@
 
     <div class="flex flex-col gap-4">
       <main class="flex-1 p-6 pr-32">
-        <section id="header" class="text-center mb-16 relative overflow-hidden">
-          <div class="mt-4 text-lg space-y-2">
-            <h1 class="text-[#167d7f] font-bold text-2xl p-4">
-              Anna Aasprong Brekke
-            </h1>
-            <p
-              class="text-[#167d7f] font-semibold bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105"
+        <section
+          id="header"
+          class="text-center mb-16 relative overflow-hidden bg-gradient-to-br from-[#167d7f] to-[#29a0b1] text-white p-8 rounded-lg shadow-lg"
+        >
+          <div
+            class="mt-4 text-lg grid grid-cols-1 md:grid-cols-4 gap-6 items-center"
+          >
+            <div class="col-span-1 md:col-span-4 text-center">
+              <h1 class="text-5xl font-extrabold p-4">Anna Aasprong Brekke</h1>
+            </div>
+            <div
+              class="col-span-1 md:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4"
             >
-              Frontend Developer Student
-            </p>
-            <p
-              class="text-[#167d7f] font-semibold bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105"
-            >
-              Master's Degree in Primary School Education
-            </p>
-            <p
-              class="text-[#167d7f] font-semibold bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105"
-            >
-              High School Teacher
-            </p>
-            <p
-              class="text-[#167d7f] font-semibold bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105"
-            >
-              Handball Player
-            </p>
-            <p
-              class="text-[#167d7f] font-semibold bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105"
-            >
-              Image Creator
-            </p>
+              <div
+                class="bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <p class="text-[#167d7f] font-semibold text-lg">
+                  Frontend Developer Student
+                </p>
+              </div>
+              <div
+                class="bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <p class="text-[#167d7f] font-semibold text-lg">
+                  Master's Degree in Primary School Education
+                </p>
+              </div>
+              <div
+                class="bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <p class="text-[#167d7f] font-semibold text-lg">
+                  High School Teacher
+                </p>
+              </div>
+              <div
+                class="bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <p class="text-[#167d7f] font-semibold text-lg">
+                  Handball Player
+                </p>
+              </div>
+              <div
+                class="bg-[#d4f9ea] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
+              >
+                <p class="text-[#167d7f] font-semibold text-lg">
+                  Image Creator
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -265,9 +283,9 @@
             Projects
           </h2>
           <div class="grid gap-8 lg:grid-cols-2">
-            <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="bg-white shadow-md rounded-lg p-6 items-center">
               <h3 class="text-2xl font-semibold mb-4">BidVault</h3>
-              <div class="flex space-x-4 mb-4">
+              <div class="flex justify-center space-x-2 mb-4">
                 <img
                   src="assets/images/Screenshots/WelcomeToBidVault.png"
                   alt="BidVault Landing Page Screenshot"
@@ -306,7 +324,7 @@
 
             <div class="bg-white shadow-md rounded-lg p-6">
               <h3 class="text-2xl font-semibold mb-4">Wherever Forever</h3>
-              <div class="flex space-x-4 mb-4">
+              <div class="flex justify-center space-x-2 mb-4">
                 <img
                   src="assets/images/Screenshots/Skjermbilde 2024-06-06 kl. 14.03.54.png"
                   alt="Wherever Forever Home Page Screenshot"
@@ -344,7 +362,7 @@
 
             <div class="bg-white shadow-md rounded-lg p-6">
               <h3 class="text-2xl font-semibold mb-4">Social Media App</h3>
-              <div class="flex space-x-4 mb-4">
+              <div class="flex justify-center space-x-2 mb-4">
                 <img
                   src="assets/images/Screenshots/some-landing.png"
                   alt="Social Media App Landing Page Screenshot"
@@ -383,7 +401,7 @@
 
             <div class="bg-white shadow-md rounded-lg p-6">
               <h3 class="text-2xl font-semibold mb-4">Futures Museum</h3>
-              <div class="flex space-x-4 mb-4">
+              <div class="flex justify-center space-x-2 mb-4">
                 <img
                   src="assets/images/Screenshots/Skjermbilde 2024-06-02 kl. 15.36.27.png"
                   alt="Futures Museum Home Page Screenshot"
