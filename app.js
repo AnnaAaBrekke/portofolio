@@ -2,23 +2,22 @@ import "./assets/styles/main.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Dropdown functionality
-  const dropdownButton = document.getElementById("profileDropdown");
-  const sidebarMenu = document.getElementById("sidebarMenu");
-  const closeSidebar = document.getElementById("closeSidebar");
+  const setupDropdown = () => {
+    const dropdownButton = document.getElementById("profileDropdown");
+    const sidebarMenu = document.getElementById("sidebarMenu");
+    const closeSidebar = document.getElementById("closeSidebar");
 
-  if (dropdownButton && sidebarMenu && closeSidebar) {
-    dropdownButton.addEventListener("click", () => {
-      const isHidden = sidebarMenu.classList.contains("hidden");
-      if (isHidden) {
-        sidebarMenu.classList.remove("hidden");
-      } else {
-        sidebarMenu.classList.add("hidden");
-      }
-    });
+    if (!dropdownButton || !sidebarMenu || !closeSidebar) {
+      console.error("Dropdown elements not found! Check your HTML IDs.");
+      return;
+    }
 
-    closeSidebar.addEventListener("click", () => {
-      sidebarMenu.classList.add("hidden");
-    });
+    const toggleSidebar = () => sidebarMenu.classList.toggle("hidden");
+
+    dropdownButton.addEventListener("click", toggleSidebar);
+    closeSidebar.addEventListener("click", () =>
+      sidebarMenu.classList.add("hidden")
+    );
 
     document.addEventListener("click", (event) => {
       if (
@@ -28,7 +27,29 @@ document.addEventListener("DOMContentLoaded", () => {
         sidebarMenu.classList.add("hidden");
       }
     });
-  } else {
-    console.error("Dropdown elements not found! Check your HTML IDs.");
-  }
+  };
+
+  // Hide skillsSidebar when footer is in view
+  const setupSidebarVisibility = () => {
+    const skillsSidebar = document.getElementById("skillsSidebar");
+    const footer = document.getElementById("footer");
+
+    if (!skillsSidebar || !footer) {
+      console.error("Skills sidebar or footer elements not found!");
+      return;
+    }
+
+    const handleScroll = () => {
+      const footerTop = footer.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      skillsSidebar.style.display =
+        footerTop <= viewportHeight ? "none" : "block";
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  };
+
+  setupDropdown();
+  setupSidebarVisibility();
 });
