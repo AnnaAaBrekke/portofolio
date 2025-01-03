@@ -1,4 +1,4 @@
-import "./assets/styles/main.scss";
+import "./src/styles/main.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Dropdown functionality
@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdownButton = document.getElementById("profileDropdown");
     const sidebarMenu = document.getElementById("sidebarMenu");
     const closeSidebar = document.getElementById("closeSidebar");
+    console.log({ dropdownButton, sidebarMenu, closeSidebar }); // Log elements
 
     if (!dropdownButton || !sidebarMenu || !closeSidebar) {
       console.error("Dropdown elements not found! Check your HTML IDs.");
@@ -50,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScroll);
   };
 
+  // Initialize functionality
   setupDropdown();
   setupSidebarVisibility();
 });
