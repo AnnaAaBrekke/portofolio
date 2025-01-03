@@ -1,8 +1,7 @@
+@import "./variables";
+
 body {
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #333;
+  font-family: $font-family;
+  color: $text-color;
+  background-color: $bg-light;
 }

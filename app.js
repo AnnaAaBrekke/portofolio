@@ -1,3 +1,5 @@
+import "./assets/styles/main.scss";
+
 document.addEventListener("DOMContentLoaded", () => {
   // Dropdown functionality
   const dropdownButton = document.getElementById("profileDropdown");

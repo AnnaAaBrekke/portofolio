@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-// @use "./variables";
-// @use "./global";
-// @use "./components";
+@import "./variables";
+@import "./global";
+@import "./components";

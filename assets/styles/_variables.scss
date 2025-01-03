@@ -1,5 +1,22 @@
-$primary-color: #75ab9a;
-$secondary-color: #29a0b1;
-$accent-color: #167d7f;
+// Colors
+$secondary-color: #75ab9a;
+$primary-color: #167d7f;
 $button-color: #68aeb0;
 $button-hover-color: #00666f;
+$bg-light: #f7fafc;
+$bg-gradient: linear-gradient(to right, #75ab9a, #29a0b1, #167d7f);
+$text-color: #2d3748;
+$link-color: #4299e1;
+$link-hover-color: darken($link-color, 10%);
+$gray-color: #808080;
+
+// Spacing
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+
+// Font
+$font-family: "Sora", sans-serif;
+
+
