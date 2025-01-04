@@ -27,10 +27,9 @@
 
     <script type="module" src="./app.js"></script>
   </head>
-
-  <body class="bg-gray-100 font-sora text-gray-800">
+  <body class="bg-gray-100 font-sora text-text">
     <header
-      class="bg-gradient-to-r from-[#75ab9a] via-[#29a0b1] to-[#167d7f] text-white p-4 shadow-lg"
+      class="bg-gradient-to-r from-secondary via-button to-primary text-text-secondary p-4 shadow-lg"
     >
       <nav class="container flex justify-between items-center">
         <ul class="flex space-x-3 ml-4">
@@ -44,7 +43,7 @@
             <img
               src="src/images/profile.JPG"
               alt="Profile Picture"
-              class="w-10 h-10 rounded-full border-2 border-white shadow-md"
+              class="w-10 h-10 rounded-full border-2 border-tertiary shadow-md"
             />
             <i class="fas fa-chevron-down"></i>
           </button>
@@ -55,11 +54,11 @@
     <section>
       <div
         id="sidebarMenu"
-        class="hidden fixed inset-y-0 right-0 w-80 bg-white shadow-lg rounded-sm z-20 py-6 px-4 flex flex-col items-center text-gray-800"
+        class="hidden fixed inset-y-0 right-0 w-80 bg-tertiary shadow-lg rounded-sm z-20 py-6 px-4 flex flex-col items-center text-text"
       >
         <button
           id="closeSidebar"
-          class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 focus:outline-none"
+          class="absolute top-4 right-4 text-text-secondary hover:text-text focus:outline-none"
         >
           <i class="fas fa-times text-xl"></i>
         </button>
@@ -69,31 +68,29 @@
           class="w-32 h-36 rounded-full mb-4"
         />
         <h2 class="text-lg font-medium">Anna Aasprong Brekke</h2>
-        <p class="text-sm text-gray-600 text-center mt-2">26 years</p>
+        <p class="text-sm text-text-accent text-center mt-2">26 years</p>
         <p
-          class="text-sm text-gray-600 text-center mt-2 flex items-center justify-center"
+          class="text-sm text-text-accent text-center mt-2 flex items-center justify-center"
         >
-          <i class="fas fa-map-marker-alt text-[#167d7f] mr-2"></i>
+          <i class="fas fa-map-marker-alt text-primary mr-2"></i>
           Drammen, Norway
         </p>
 
         <div class="w-full mt-4">
-          <p
-            class="mb-2 text-gray-800 text-sm flex items-center justify-center"
-          >
-            <i class="fas fa-globe text-[#167d7f] mr-2"></i> Norwegian:
-            <span class="text-[#75ab9a] ml-1 text-base">★★★★★</span>
+          <p class="mb-2 text-text text-sm flex items-center justify-center">
+            <i class="fas fa-globe text-primary mr-2"></i> Norwegian:
+            <span class="text-secondary ml-1 text-base">★★★★★</span>
           </p>
-          <p class="text-gray-800 text-sm flex items-center justify-center">
-            <i class="fas fa-globe text-[#167d7f] mr-2"></i> English:
-            <span class="text-[#75ab9a] ml-1 text-base">★★★★☆</span>
+          <p class="text-text text-sm flex items-center justify-center">
+            <i class="fas fa-globe text-primary mr-2"></i> English:
+            <span class="text-secondary ml-1 text-base">★★★★☆</span>
           </p>
         </div>
         <div class="mt-8 w-full text-center">
           <p class="mb-4">
             <a
               href="mailto:annabrekke98@gmail.com"
-              class="text-blue-600 hover:underline text-sm"
+              class="text-link hover:underline text-sm"
             >
               <i class="fas fa-envelope"></i> annabrekke98@gmail.com
             </a>
@@ -102,7 +99,7 @@
             <a
               href="https://www.linkedin.com/in/anna-aasprong-brekke-a571132b0/"
               target="_blank"
-              class="text-blue-500 hover:underline text-sm"
+              class="text-link hover:underline text-sm"
             >
               <i class="fab fa-linkedin"></i> LinkedIn
             </a>
@@ -120,7 +117,7 @@
             <a
               href="https://github.com/AnnaAaBrekke"
               target="_blank"
-              class="text-gray-800 hover:underline text-sm"
+              class="text-text hover:underline text-sm"
             >
               <i class="fab fa-github"></i> GitHub
             </a>
@@ -132,9 +129,9 @@
     <section>
       <div
         id="skillsSidebar"
-        class="skills-sidebar fixed top-24 right-2 bg-white shadow-lg p-4 rounded-lg max-h-[80vh] overflow-y-auto"
+        class="skills-sidebar fixed top-24 right-2 bg-tertiary shadow-lg p-4 rounded-lg max-h-[80vh] overflow-y-auto"
       >
-        <h2 class="text-2xl font-semibold mb-6 text-center text-[#167d7f]">
+        <h2 class="text-2xl font-semibold mb-6 text-center text-primary">
           Skills
         </h2>
         <div class="skills-icons flex flex-col items-center space-y-3">
@@ -264,7 +261,7 @@
     <main class="flex-1 p-6 pr-32">
       <section
         id="welcome"
-        class="relative text-center mb-12 overflow-hidden bg-gradient-to-br from-[#75ab9a] to-[#29a0b1] text-white p-6 rounded-3xl shadow-2xl"
+        class="relative text-center mb-12 overflow-hidden bg-gradient-to-br from-secondary to-button text-text-secondary p-6 rounded-3xl shadow-2xl"
       >
         <div class="text-lg grid grid-cols-1 gap-6 items-center text-center">
           <div class="text-center">
@@ -279,14 +276,14 @@
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-8"
           >
             <div
-              class="relative bg-white p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
+              class="relative bg-tertiary p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
             >
-              <p class="text-[#167d7f] font-semibold text-lg mb-2">
+              <p class="text-primary font-semibold text-lg mb-2">
                 Frontend Developer
               </p>
 
               <div
-                class="absolute inset-0 bg-[#167d7f] bg-opacity-90 text-white flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="absolute inset-0 bg-primary bg-opacity-90 text-text-secondary flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <p class="text-sm text-center">
                   Currently in the final semester of a Frontend Development
@@ -296,14 +293,14 @@
             </div>
 
             <div
-              class="relative bg-white p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
+              class="relative bg-tertiary p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
             >
-              <p class="text-[#167d7f] font-semibold text-lg mb-2">
+              <p class="text-primary font-semibold text-lg mb-2">
                 Master's Degree in Primary School Education
               </p>
 
               <div
-                class="absolute inset-0 bg-[#167d7f] bg-opacity-90 text-white flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="absolute inset-0 bg-primary bg-opacity-90 text-text-secondary flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <p class="text-sm text-center">
                   Graduated from the University of Sørøst-Norge. My master
@@ -313,14 +310,14 @@
             </div>
 
             <div
-              class="relative bg-white p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
+              class="relative bg-tertiary p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
             >
-              <p class="text-[#167d7f] font-semibold text-lg mb-2">
+              <p class="text-primary font-semibold text-lg mb-2">
                 Handball Player
               </p>
 
               <div
-                class="absolute inset-0 bg-[#167d7f] bg-opacity-90 text-white flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="absolute inset-0 bg-primary bg-opacity-90 text-text-secondary flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <p class="text-sm text-center">
                   Captain at Nordstrand Damer Elite which competes in the first
@@ -330,14 +327,14 @@
             </div>
 
             <div
-              class="relative bg-white p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
+              class="relative bg-tertiary p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
             >
-              <p class="text-[#167d7f] font-semibold text-lg mb-2">
+              <p class="text-primary font-semibold text-lg mb-2">
                 High School Teacher
               </p>
 
               <div
-                class="absolute inset-0 bg-[#167d7f] bg-opacity-90 text-white flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="absolute inset-0 bg-primary bg-opacity-90 text-text-secondary flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <p class="text-sm text-center">
                   Teaching at Lier Videregående Skole since 2022.
@@ -346,14 +343,14 @@
             </div>
 
             <div
-              class="relative bg-white p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
+              class="relative bg-tertiary p-6 rounded-2xl shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden"
             >
-              <p class="text-[#167d7f] font-semibold text-lg mb-2">
+              <p class="text-primary font-semibold text-lg mb-2">
                 Media Creator
               </p>
 
               <div
-                class="absolute inset-0 bg-[#167d7f] bg-opacity-90 text-white flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="absolute inset-0 bg-primary bg-opacity-90 text-text-secondary flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <p class="text-sm text-center">
                   Passionate about taking photos, editing videos and creating
@@ -364,50 +361,47 @@
           </div>
         </div>
       </section>
-
-      <section id="timeline" class="p-8 bg-gray-100">
+      <section id="timeline" class="p-8">
         <div class="mb-16">
-          <h3 class="text-2xl font-semibold text-[#167d7f] mb-8">Education</h3>
+          <h3 class="text-2xl font-semibold text-primary mb-8">Education</h3>
           <div
-            class="relative lg:flex lg:flex-wrap lg:gap-8 lg:items-start border-l lg:border-l-0 lg:border-t border-gray-300"
+            class="relative lg:flex lg:flex-wrap lg:gap-8 lg:items-start border-l lg:border-l-0 lg:border-t border-border"
           >
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">
-                Noroff College
-              </h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <h4 class="text-xl font-semibold text-text">Noroff College</h4>
+              <p class="text-text-accent text-sm mb-2">
                 Frontend Developer | Aug 2023 - Jun 2025
               </p>
             </div>
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">
+              <h4 class="text-xl font-semibold text-text">
                 Universitetet i Sørøst-Norge
               </h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <p class="text-text-accent text-sm mb-2">
                 Master's Degree in Primary School Education | Aug 2018 - Jul
                 2023
               </p>
             </div>
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">
+              <h4 class="text-xl font-semibold text-text">
                 Drammen Toppidrett VGs
               </h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <p class="text-text-accent text-sm mb-2">
                 High School | Aug 2015 - Jul 2018
               </p>
             </div>
@@ -415,72 +409,72 @@
         </div>
 
         <div>
-          <h3 class="text-2xl font-semibold text-[#167d7f] mb-8">
+          <h3 class="text-2xl font-semibold text-primary mb-8">
             Work Experience
           </h3>
           <div
-            class="relative lg:flex lg:flex-wrap lg:gap-8 lg:items-start border-l lg:border-l-0 lg:border-t border-gray-300"
+            class="relative lg:flex lg:flex-wrap lg:gap-8 lg:items-start border-l lg:border-l-0 lg:border-t border-border"
           >
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">
+              <h4 class="text-xl font-semibold text-text">
                 Lier Videregående skole
               </h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <p class="text-text-accent text-sm mb-2">
                 Teacher in High School | Jan 2022 - Present
               </p>
             </div>
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">
+              <h4 class="text-xl font-semibold text-text">
                 Åskollen Barneskole
               </h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <p class="text-text-accent text-sm mb-2">
                 Teaching Assistant | Jan 2017 – Jun 2022
               </p>
             </div>
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">
+              <h4 class="text-xl font-semibold text-text">
                 Drammen kommune: Sommerskole
               </h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <p class="text-text-accent text-sm mb-2">
                 Activity Leader | Jun 2019 - Aug 2021
               </p>
             </div>
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">
+              <h4 class="text-xl font-semibold text-text">
                 Digitale Læringsverkstedet
               </h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <p class="text-text-accent text-sm mb-2">
                 Student Assistant | Aug 2019 - Nov 2019
               </p>
             </div>
             <div
-              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-gray-300"
+              class="mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border"
             >
               <span
-                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-[#167d7f] text-white rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
+                class="absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%]"
               ></span>
-              <h4 class="text-xl font-semibold text-gray-800">Torshov Sport</h4>
-              <p class="text-gray-600 text-sm mb-2">
+              <h4 class="text-xl font-semibold text-text">Torshov Sport</h4>
+              <p class="text-text-accent text-sm mb-2">
                 Sales Associate | Mar 2016 - Aug 2018
               </p>
             </div>
@@ -489,11 +483,9 @@
       </section>
 
       <section id="projects" class="mb-16">
-        <h2 class="text-3xl font-bold text-center mb-8 text-gray-700">
-          Projects
-        </h2>
+        <h2 class="text-3xl font-bold text-center mb-8 text-text">Projects</h2>
         <div class="grid gap-8 lg:grid-cols-2">
-          <div class="bg-white shadow-md rounded-lg p-6 items-center">
+          <div class="bg-tertiary shadow-md rounded-lg p-6 items-center">
             <h3 class="text-2xl font-semibold mb-4">BidVault</h3>
             <div class="flex justify-center space-x-2 mb-4">
               <img
@@ -518,21 +510,21 @@
               <a
                 href="https://github.com/AnnaAaBrekke/BidVault.git"
                 target="_blank"
-                class="px-4 py-2 bg-[#68aeb0] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-button text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 GitHub Repo
               </a>
               <a
                 href="https://bidvault.netlify.app/welcome"
                 target="_blank"
-                class="px-4 py-2 bg-[#167d7f] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-primary text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 Live Site
               </a>
             </div>
           </div>
 
-          <div class="bg-white shadow-md rounded-lg p-6">
+          <div class="bg-tertiary shadow-md rounded-lg p-6">
             <h3 class="text-2xl font-semibold mb-4">Wherever Forever</h3>
             <div class="flex justify-center space-x-2 mb-4">
               <img
@@ -556,21 +548,21 @@
               <a
                 href="https://github.com/NoroffFEU/AnnaAaBrekke-FED1-PE1.git"
                 target="_blank"
-                class="px-4 py-2 bg-[#68aeb0] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-button text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 GitHub Repo
               </a>
               <a
                 href="https://norofffeu.github.io/AnnaAaBrekke-FED1-PE1/"
                 target="_blank"
-                class="px-4 py-2 bg-[#167d7f] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-primary text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 Live Site
               </a>
             </div>
           </div>
 
-          <div class="bg-white shadow-md rounded-lg p-6">
+          <div class="bg-tertiary shadow-md rounded-lg p-6">
             <h3 class="text-2xl font-semibold mb-4">Social Media App</h3>
             <div class="flex justify-center space-x-2 mb-4">
               <img
@@ -595,21 +587,21 @@
               <a
                 href="https://github.com/NoroffFEU/fed2-js2-ca-AnnaAaBrekke"
                 target="_blank"
-                class="px-4 py-2 bg-[#68aeb0] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-button text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 GitHub Repo
               </a>
               <a
                 href="https://socialm-aaab.netlify.app/auth/"
                 target="_blank"
-                class="px-4 py-2 bg-[#167d7f] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-primary text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 Live Site
               </a>
             </div>
           </div>
 
-          <div class="bg-white shadow-md rounded-lg p-6">
+          <div class="bg-tertiary shadow-md rounded-lg p-6">
             <h3 class="text-2xl font-semibold mb-4">Futures Museum</h3>
             <div class="flex justify-center space-x-2 mb-4">
               <img
@@ -632,14 +624,14 @@
               <a
                 href="https://github.com/AnnaAaBrekke/ScienceMuseum-SemesterProject.git"
                 target="_blank"
-                class="px-4 py-2 bg-[#68aeb0] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-button text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 GitHub Repo
               </a>
               <a
                 href="https://annaaabrekke.github.io/ScienceMuseum-SemesterProject/"
                 target="_blank"
-                class="px-4 py-2 bg-[#167d7f] text-white rounded-lg transition-transform duration-300 ease-in-out hover:bg-[#00666f] hover:scale-105"
+                class="px-4 py-2 bg-primary text-text-secondary rounded-lg transition-transform duration-300 ease-in-out hover:bg-button-hover hover:scale-105"
               >
                 Live Site
               </a>
@@ -649,7 +641,7 @@
       </section>
 
       <section id="media" class="mb-16 p-2">
-        <h2 class="text-3xl font-bold text-center mb-8 text-gray-700">
+        <h2 class="text-3xl font-bold text-center mb-8 text-text">
           My Captured Photos
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
@@ -703,7 +695,7 @@
 
       <section id="AIimg" class="mb-16 p-2">
         <div class="column">
-          <h2 class="text-3xl font-bold text-center mb-8 text-gray-700">
+          <h2 class="text-3xl font-bold text-center mb-8 text-text">
             AI-Created Images
           </h2>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -776,7 +768,7 @@
     </main>
 
     <section id="contact" class="text-center mb-16">
-      <h2 class="text-3xl font-bold mb-8 text-gray-700">Contact Me</h2>
+      <h2 class="text-3xl font-bold mb-8 text-text">Contact Me</h2>
       <div>
         <p class="mb-4">
           <a
@@ -808,7 +800,7 @@
           <a
             href="https://github.com/AnnaAaBrekke"
             target="_blank"
-            class="text-gray-800 hover:underline"
+            class="text-text hover:underline"
           >
             <i class="fab fa-github"></i> GitHub
           </a>
@@ -816,7 +808,7 @@
       </div>
     </section>
 
-    <footer id="footer" class="bg-gray-800 text-white py-6 text-center">
+    <footer id="footer" class="bg-text text-text-secondary py-6 text-center">
       <p class="px-2">&copy; 2025 Anna Aasprong Brekke</p>
     </footer>
   </body>
