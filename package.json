@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "This repository serves as a portfolio showcase for the first year of my frontend development studies.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
@@ -11,7 +11,8 @@
     "serve": "vite preview",
     "lint": "eslint",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build:css": "sass src/styles/main.scss dist/main.css"
   },
   "keywords": [],
   "author": "",
