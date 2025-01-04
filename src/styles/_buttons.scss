@@ -1,39 +1,16 @@
-@import "./_variables.scss";
-
-@mixin button-style(
-  $bg-color,
-  $text-color,
-  $hover-bg-color,
-  $hover-scale: 1.05
-) {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: $bg-color;
-  color: $text-color;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition:
-    transform 0.3s ease-in-out,
-    background-color 0.3s ease-in-out;
-
+@mixin button-style {
+  @apply inline-block px-4 py-2 rounded-md text-center no-underline transition-transform duration-300 ease-in-out;
   &:hover {
-    background-color: $hover-bg-color;
-    transform: scale($hover-scale);
+    @apply transform scale-110;
   }
 }
 
 a.github-repo {
-  @include button-style(
-    $bg-color: $button,
-    $text-color: $text-secondary,
-    $hover-bg-color: $button-hover
-  );
+  @apply bg-button text-text-secondary hover:bg-button-hover;
+  @include button-style();
 }
 
 a.live-site {
-  @include button-style(
-    $bg-color: $primary,
-    $text-color: $text-secondary,
-    $hover-bg-color: $button-hover
-  );
+  @apply bg-primary text-text-secondary hover:bg-button-hover;
+  @include button-style();
 }
