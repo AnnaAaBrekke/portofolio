@@ -1,0 +1,29 @@
+/* Typography Styles */
+p {
+  @apply text-base leading-relaxed mb-4;
+  color: var(--text-color);
+}
+
+.section-header {
+  @apply text-center text-3xl font-bold leading-snug mb-4;
+}
+
+.timeline-header {
+  @apply text-2xl font-semibold text-primary mb-8;
+}
+
+.timeline-title {
+  @apply text-xl font-semibold text-text;
+}
+
+.timeline-p {
+  @apply text-text-accent text-sm mb-2;
+}
+
+.project-title {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.skills-title {
+  @apply text-2xl font-semibold mb-6 text-center text-primary;
+}

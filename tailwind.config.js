@@ -13,7 +13,7 @@ export default {
         text: "#1F2937",
         "text-secondary": "#FFFFFF",
         "text-accent": "#4B5563",
-        link: "#4299e1",
+        link: "#3366FF",
         border: "#D1D5DB",
       },
       fontFamily: {

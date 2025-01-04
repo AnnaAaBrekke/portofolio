@@ -1,3 +1,38 @@
 .skill-icon {
   @apply w-10 h-10 transition-transform duration-300 ease-in-out hover:scale-110;
 }
+
+.project-img {
+  @apply w-1/2 rounded-lg;
+}
+
+// Define reusable mixins
+@mixin image {
+  border-radius: 0.5rem; // rounded-lg
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // shadow-md
+}
+
+@mixin photo {
+  @include image; // Reuse media styles
+  object-fit: cover; // object-cover
+  width: 100%; // w-full
+  height: 100%; // h-full
+}
+
+// Apply mixins
+.ai-photo {
+  @include image; // Only media styles
+}
+
+.captured-photo {
+  @include photo; // Media + photo styles
+}
+
+
+.timeline-bullet {
+  @apply absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%];
+}
+
+.timeline-marker {
+  @apply mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border;
+}
