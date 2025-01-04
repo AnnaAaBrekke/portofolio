@@ -1,3 +1,24 @@
+// Images
+@mixin image {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@mixin photo {
+  @include image;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.ai-photo {
+  @include image;
+}
+
+.captured-photo {
+  @include photo;
+}
+
 .skill-icon {
   @apply w-10 h-10 transition-transform duration-300 ease-in-out hover:scale-110;
 }
@@ -6,33 +27,28 @@
   @apply w-1/2 rounded-lg;
 }
 
-// Define reusable mixins
-@mixin image {
-  border-radius: 0.5rem; // rounded-lg
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // shadow-md
-}
-
-@mixin photo {
-  @include image; // Reuse media styles
-  object-fit: cover; // object-cover
-  width: 100%; // w-full
-  height: 100%; // h-full
-}
-
-// Apply mixins
-.ai-photo {
-  @include image; // Only media styles
-}
-
-.captured-photo {
-  @include photo; // Media + photo styles
-}
-
-
+// Timeline
 .timeline-bullet {
   @apply absolute flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 bg-primary text-text-secondary rounded-full -left-9 lg:-top-4 lg:left-0 lg:translate-x-[-50%];
 }
 
 .timeline-marker {
   @apply mb-10 ml-6 lg:ml-0 lg:mb-0 lg:pl-6 lg:pt-6 relative lg:flex-1 lg:border-l lg:border-border;
+}
+
+//Skeleton/loader
+.skeleton {
+  @apply bg-gray-300 rounded-lg w-full;
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(to right, #e0e0e0 25%, #f2f2f2 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }

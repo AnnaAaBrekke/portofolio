@@ -53,3 +53,12 @@
 //   const loaders = container.querySelectorAll(".card-loader");
 //   loaders.forEach((loader) => loader.remove());
 // }
+/**
+ * Removes the skeleton loader once the content is fully loaded or after a timeout.
+ */
+export const removeSkeletonLoader = () => {
+  const loader = document.getElementById("skeleton-loader");
+  if (loader) {
+    loader.style.display = "none";
+  }
+};
