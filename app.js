@@ -1,12 +1,9 @@
-import "./src/styles/main.scss";
-
 document.addEventListener("DOMContentLoaded", () => {
   // Dropdown functionality
   const setupDropdown = () => {
     const dropdownButton = document.getElementById("profileDropdown");
     const sidebarMenu = document.getElementById("sidebarMenu");
     const closeSidebar = document.getElementById("closeSidebar");
-    console.log({ dropdownButton, sidebarMenu, closeSidebar }); // Log elements
 
     if (!dropdownButton || !sidebarMenu || !closeSidebar) {
       console.error("Dropdown elements not found! Check your HTML IDs.");
