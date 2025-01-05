@@ -1,1 +1,3 @@
 node_modules/
+dist/     # Ignore dist folder
+!dist     # But allow the dist folder to be committed
