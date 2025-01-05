@@ -4,9 +4,6 @@ import autoprefixer from "autoprefixer";
 
 export default defineConfig({
   css: {
-    preprocessorOptions: {
-      scss: {},
-    },
     postcss: {
       plugins: [tailwindcss(), autoprefixer()],
     },
