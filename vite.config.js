@@ -3,7 +3,7 @@ import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
 
 export default defineConfig({
-  base: "/", // Adjust if deploying to a subdirectory
+  base: "./",
   css: {
     postcss: {
       plugins: [tailwindcss(), autoprefixer()],
