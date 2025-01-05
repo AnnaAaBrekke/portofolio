@@ -3,16 +3,14 @@ import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
 
 export default defineConfig({
+  base: "/", // Adjust if deploying to a subdirectory
   css: {
-    preprocessorOptions: {
-      scss: {},
-    },
     postcss: {
       plugins: [tailwindcss(), autoprefixer()],
     },
   },
   build: {
     outDir: "dist",
-    assetsDir: "assets", // Ensure CSS/JS/images go to 'dist/assets'
+    assetsDir: "assets",
   },
 });
