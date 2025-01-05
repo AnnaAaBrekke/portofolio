@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "type": "module",
-  "description": "This repository serves as a portfolio showcase for the first year of my frontend development studies.",
+  "description": "This website serves as my portfolio and showcases projects from my frontend development studies.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
