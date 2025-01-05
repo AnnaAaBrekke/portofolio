@@ -11,8 +11,7 @@
     "serve": "vite preview",
     "lint": "eslint",
     "format": "prettier --write .",
-    "prepare": "husky install",
-    "build:css": "sass src/styles/main.scss dist/main.css"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
