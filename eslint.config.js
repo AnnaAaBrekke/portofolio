@@ -5,6 +5,7 @@ import prettierPlugin from "eslint-plugin-prettier";
 
 export default [
   {
+    ignores: ["dist", "node_modules"],
     languageOptions: {
       globals: globals.browser,
     },

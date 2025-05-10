@@ -1228,10 +1228,6 @@ video {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;

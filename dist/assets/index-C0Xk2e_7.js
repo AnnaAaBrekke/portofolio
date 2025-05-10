@@ -11944,7 +11944,7 @@ const Kh = Ls(Lh),
         "bg-gradient-to-r from-secondary via-button to-primary text-text-secondary shadow-md",
       children: S.jsx("nav", {
         className:
-          "max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between",
+          "max-w-7xl mx-auto px-2 py-4 flex items-center justify-between",
         children: S.jsx("ul", {
           className:
             "flex gap-5 md:gap-8 text-sm md:text-base font-medium tracking-wide",
@@ -12427,7 +12427,7 @@ const nm = ({ title: l, description: t, delay: a }) =>
       {
         title: "Frontend Developer",
         description:
-          "Final semester of a Frontend Development degree at Noroff College.",
+          "Graduated from Noroff College with a degree in Frontend Development.",
       },
       {
         title: "Master’s in Education",
@@ -12452,7 +12452,7 @@ const nm = ({ title: l, description: t, delay: a }) =>
     return S.jsxs("section", {
       id: "intro",
       className:
-        "relative text-center mb-16 overflow-hidden bg-gradient-to-br from-secondary to-button text-text-secondary p-10 rounded-3xl shadow-2xl",
+        "relative text-center mb-4 overflow-hidden bg-gradient-to-br from-secondary to-button text-text-secondary p-10 rounded-3xl shadow-2xl",
       children: [
         S.jsx("h1", {
           className: "text-4xl lg:text-5xl font-bold mb-10 tracking-tight",
