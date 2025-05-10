@@ -1,6 +1,6 @@
 // export function createCardSkeleton() {
 //   const skeleton = document.createElement("div");
-//   skeleton.classList.add(
+//   skeleton.classNameList.add(
 //     "bg-white",
 //     "rounded-lg",
 //     "shadow-md",
@@ -9,17 +9,17 @@
 //   );
 
 //   const header = document.createElement("div");
-//   header.classList.add("w-2/3", "h-4", "bg-gray-300", "rounded", "mb-2");
+//   header.classNameList.add("w-2/3", "h-4", "bg-gray-300", "rounded", "mb-2");
 //   skeleton.appendChild(header);
 
 //   for (let i = 0; i < 2; i++) {
 //     const bodyLine = document.createElement("div");
-//     bodyLine.classList.add("w-full", "h-8", "bg-gray-300", "rounded", "mb-2");
+//     bodyLine.classNameList.add("w-full", "h-8", "bg-gray-300", "rounded", "mb-2");
 //     skeleton.appendChild(bodyLine);
 //   }
 
 //   const footer = document.createElement("div");
-//   footer.classList.add("w-1/2", "h-8", "bg-gray-300", "rounded");
+//   footer.classNameList.add("w-1/2", "h-8", "bg-gray-300", "rounded");
 //   skeleton.appendChild(footer);
 
 //   return skeleton;
@@ -38,7 +38,7 @@
 
 //   for (let i = 0; i < count; i++) {
 //     const loader = createCardSkeleton();
-//     loader.classList.add("card-loader"); // Add a shared class for all loaders
+//     loader.classNameList.add("card-loader"); // Add a shared className for all loaders
 //     container.appendChild(loader);
 //   }
 // }
@@ -49,7 +49,7 @@
 //     return;
 //   }
 
-//   // Select all elements with the "card-loader" class and remove them
+//   // Select all elements with the "card-loader" className and remove them
 //   const loaders = container.querySelectorAll(".card-loader");
 //   loaders.forEach((loader) => loader.remove());
 // }

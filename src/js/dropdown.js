@@ -15,12 +15,12 @@ export const setupDropdown = () => {
   /**
    * Toggles the visibility of the sidebar menu.
    */
-  const toggleSidebar = () => sidebarMenu.classList.toggle("hidden");
+  const toggleSidebar = () => sidebarMenu.classNameList.toggle("hidden");
 
   // Add event listeners for toggling and closing the sidebar
   dropdownButton.addEventListener("click", toggleSidebar);
   closeSidebar.addEventListener("click", () =>
-    sidebarMenu.classList.add("hidden")
+    sidebarMenu.classNameList.add("hidden")
   );
 
   // Close sidebar when clicking outside of it
@@ -29,7 +29,7 @@ export const setupDropdown = () => {
       !sidebarMenu.contains(event.target) &&
       !dropdownButton.contains(event.target)
     ) {
-      sidebarMenu.classList.add("hidden");
+      sidebarMenu.classNameList.add("hidden");
     }
   });
 };

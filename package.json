@@ -18,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@vitejs/plugin-react": "^4.4.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
@@ -44,5 +45,10 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0"
   }
 }
