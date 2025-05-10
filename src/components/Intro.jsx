@@ -17,7 +17,7 @@ const IntroSection = () => {
     {
       title: "Frontend Developer",
       description:
-        "Final semester of a Frontend Development degree at Noroff College.",
+        "Graduated from Noroff College with a degree in Frontend Development.",
     },
     {
       title: "Master’s in Education",
@@ -43,7 +43,7 @@ const IntroSection = () => {
   return (
     <section
       id="intro"
-      className="relative text-center mb-16 overflow-hidden bg-gradient-to-br from-secondary to-button text-text-secondary p-10 rounded-3xl shadow-2xl"
+      className="relative text-center mb-4 overflow-hidden bg-gradient-to-br from-secondary to-button text-text-secondary p-10 rounded-3xl shadow-2xl"
     >
       <h1 className="text-4xl lg:text-5xl font-bold mb-10 tracking-tight">
         Anna Aasprong Brekke

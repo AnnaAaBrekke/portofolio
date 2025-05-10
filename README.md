@@ -10,8 +10,8 @@
 
 I'm a frontend development student in my final semester of studies. With graduation approaching, I’m excited about what the future holds. Besides my interest for coding, I’m an active handball player and enjoy traveling. I also hold a master’s degree in primary school education and work as a high school teacher.
 
-- 👩🏽‍💻 **I’m currently working on**: Enhancing my JavaScript skills and optimizing workflow testing.
-- 🌱 **I’m currently learning**: React and Typescript.
+- 👩🏽‍💻 **I’m currently working on**: Enhancing my React skills and optimizing workflow testing.
+- 🌱 **I’m currently learning**: GitLab and Typescript.
 - 💬 **Ask me about**: Frontend development, teaching, handball, and travel tips.
 - 📫 **How to reach me**: [annabrekke98@gmail.com](mailto:annabrekke98@gmail.com)
 - ⚡ **Fun fact**: I wrote my master's thesis about "algorithm awareness" in social studies.
@@ -32,8 +32,17 @@ To run this project locally, follow these instructions:
 
 #### Prerequisites:
 
-- Node.js (version 14 or higher)
-- npm (Node package manager)
+Make sure you have the following installed:
+
+```bash
+node -v
+npm -v
+```
+
+This project is also built with:
+
+- React (UI library)
+- Vite (Development and build tool)
 
 ### Step 1: Clone the repository
 

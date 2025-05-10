@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header className="bg-gradient-to-r from-secondary via-button to-primary text-text-secondary shadow-md">
-      <nav className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-2 py-4 flex items-center justify-between">
         <ul className="flex gap-5 md:gap-8 text-sm md:text-base font-medium tracking-wide">
           {[
             { label: "My Journey", href: "#timeline" },
