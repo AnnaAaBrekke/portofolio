@@ -41,7 +41,7 @@ function SidebarProfile() {
                 className="w-32 h-36 rounded-full mx-auto mb-4 border-2 border-gray-300 shadow"
               />
               <h2 className="text-xl font-semibold">Anna Aasprong Brekke</h2>
-              <p className="text-sm text-gray-500">26 years</p>
+              <p className="text-sm text-gray-500 mt-1">26 years</p>
               <p className="text-sm text-gray-500 flex justify-center items-center gap-2 mt-1">
                 <FiMapPin className="text-primary" />
                 Drammen, Norway

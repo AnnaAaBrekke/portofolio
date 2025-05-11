@@ -24,9 +24,7 @@ const SkillsSection = () => {
       id="skills"
       className="mb-24 px-6 md:px-12 py-12 rounded-3xl bg-gradient-to-br from-secondary/20 to-primary/10 shadow-lg"
     >
-      <h2 className="section-header text-center text-xl md:text-3xl mb-10 font-bold text-primary animate-fade-up">
-        Tools & Technologies
-      </h2>
+      <h2 className="skills-title animate-fade-up">Tools & Technologies</h2>
 
       <div className="overflow-x-auto scrollbar-hide">
         <div className="flex gap-6 px-2 md:px-6 pb-2">
