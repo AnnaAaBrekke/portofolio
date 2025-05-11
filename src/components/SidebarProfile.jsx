@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { FiChevronDown, FiX, FiMapPin, FiGlobe, FiMail } from "react-icons/fi";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { SkeletonImageCircle } from "./Skeleton";
 
 function SidebarProfile() {
   const [isOpen, setIsOpen] = useState(false);
+  const [thumbnailLoaded, setThumbnailLoaded] = useState(false);
+  const [profileLoaded, setProfileLoaded] = useState(false);
 
   const toggleSidebar = () => setIsOpen((prev) => !prev);
   const closeSidebar = () => setIsOpen(false);
@@ -15,10 +18,14 @@ function SidebarProfile() {
         className="fixed top-2 right-4 flex items-center gap-2 cursor-pointer z-50"
         onClick={toggleSidebar}
       >
+        {!thumbnailLoaded && <SkeletonImageCircle />}
         <img
           src="/images/profile.JPG"
           alt="Profile thumbnail"
-          className="w-10 h-10 rounded-full object-cover border-2 border-white shadow"
+          onLoad={() => setThumbnailLoaded(true)}
+          className={`w-10 h-10 rounded-full object-cover border-2 border-white shadow transition-opacity duration-300 ${
+            thumbnailLoaded ? "opacity-100" : "opacity-0"
+          }`}
         />
         {isOpen ? (
           <FiX className="text-text hover:text-primary text-xl transition" />
@@ -35,10 +42,18 @@ function SidebarProfile() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="text-center mt-6">
+              {!profileLoaded && (
+                <div className="w-32 h-36 mx-auto mb-4">
+                  <SkeletonImageCircle size="w-32 h-36" />
+                </div>
+              )}
               <img
                 src="/images/profile.JPG"
                 alt="Profile"
-                className="w-32 h-36 rounded-full mx-auto mb-4 border-2 border-gray-300 shadow"
+                onLoad={() => setProfileLoaded(true)}
+                className={`w-32 h-36 rounded-full mx-auto mb-4 border-2 border-gray-300 shadow transition-opacity duration-300 ${
+                  profileLoaded ? "opacity-100" : "opacity-0"
+                }`}
               />
               <h2 className="text-xl font-semibold">Anna Aasprong Brekke</h2>
               <p className="text-sm text-gray-500 mt-1">26 years</p>

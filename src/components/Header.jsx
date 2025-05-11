@@ -1,4 +1,19 @@
+import React, { useEffect, useState } from "react";
+import { HeaderSkeleton } from "./Skeleton";
+
 const Header = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 800); // simulate loading
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <HeaderSkeleton />;
+  }
+
+  // Real header
   return (
     <header className="bg-gradient-to-r from-secondary via-button to-primary text-text-secondary shadow-md">
       <nav className="max-w-7xl mx-auto px-2 py-4 flex items-center justify-between">

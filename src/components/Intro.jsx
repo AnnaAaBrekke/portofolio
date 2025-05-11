@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { IntroCardSkeleton } from "./Skeleton";
 
 const IntroCard = ({ title, description, delay }) => (
   <div
@@ -13,32 +14,44 @@ const IntroCard = ({ title, description, delay }) => (
 );
 
 const IntroSection = () => {
+  const [loading, setLoading] = useState(true);
+
   const cards = [
     {
+      id: "frontend",
       title: "Frontend Developer",
       description:
         "Graduated from Noroff College with a degree in Frontend Development.",
     },
     {
+      id: "education",
       title: "Master’s in Education",
       description:
         "Graduated from USN. Master’s thesis focused on algorithm awareness in Social Studies.",
     },
     {
+      id: "handball",
       title: "Handball Captain",
       description:
         "Captain at Nordstrand Damer Elite, competing in Norway’s first division.",
     },
     {
+      id: "teacher",
       title: "High School Teacher",
       description: "Teaching at Lier Videregående Skole since 2022.",
     },
     {
+      id: "media",
       title: "Media Creator",
       description:
         "Passionate about photography, video editing, and AI-generated images.",
     },
   ];
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section
@@ -50,14 +63,16 @@ const IntroSection = () => {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-        {cards.map((card, index) => (
-          <IntroCard
-            key={index}
-            title={card.title}
-            description={card.description}
-            delay={index * 100}
-          />
-        ))}
+        {loading
+          ? cards.map((card) => <IntroCardSkeleton key={card.id} />)
+          : cards.map((card, index) => (
+              <IntroCard
+                key={card.id}
+                title={card.title}
+                description={card.description}
+                delay={index * 100}
+              />
+            ))}
       </div>
     </section>
   );
