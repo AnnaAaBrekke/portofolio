@@ -1,3 +1,11 @@
+/**
+ * Timeline component renders sections for Education and Work Experience
+ * using data imported from the timeline dataset.
+ *
+ * @component
+ * @returns {JSX.Element} A timeline layout with education and work history.
+ */
+
 import React from "react";
 import { educationEntries, workEntries } from "../data/timeline";
 

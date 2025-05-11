@@ -1,3 +1,11 @@
+/**
+ * Projects section component that showcases a list of project cards.
+ * Each card includes project title, description, screenshots, and links to GitHub and live demo.
+ *
+ * @component
+ * @returns {JSX.Element} A grid of ProjectCard components.
+ */
+
 import React from "react";
 import { projects } from "../data/projects";
 

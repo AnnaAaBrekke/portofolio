@@ -1,3 +1,12 @@
+/**
+ * Contact component displays a list of contact methods (email, social media)
+ * with icons and links. The data is sourced from a static array and rendered
+ * as a list of styled anchor tags.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Contact section.
+ */
+
 import { contacts } from "../data/contacts";
 import { IconMap } from "../utils/iconMap";
 

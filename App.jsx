@@ -11,11 +11,11 @@ import SkillsSection from "./src/components/Skills";
 
 function App() {
   return (
-    <div className="bg-gray-100 font-sora text-text">
+    <>
       <Header />
       <SidebarProfile />
 
-      <main className="flex-1 p-6 lg:pr-40">
+      <main className="flex-1 p-6">
         <Intro />
         <Timeline />
         <Projects />
@@ -35,7 +35,7 @@ function App() {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
 

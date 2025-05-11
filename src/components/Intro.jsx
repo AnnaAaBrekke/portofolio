@@ -1,3 +1,11 @@
+/**
+ * IntroSection component displays an introductory section with animated cards.
+ * Uses a loading state to render skeleton placeholders before showing actual content.
+ *
+ * @component
+ * @returns {JSX.Element} A section with intro cards or skeletons during loading.
+ */
+
 import React, { useEffect, useState } from "react";
 import { introCards } from "../data/introCards";
 import { IntroCardSkeleton } from "../utils/Skeleton";

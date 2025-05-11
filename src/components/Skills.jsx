@@ -1,3 +1,11 @@
+/**
+ * SkillsSection component displays a horizontal scrollable list
+ * of technology and tool icons with labels, based on imported skill data.
+ *
+ * @component
+ * @returns {JSX.Element} A styled section showcasing tools and technologies.
+ */
+
 import React from "react";
 import { skills } from "../data/skills";
 

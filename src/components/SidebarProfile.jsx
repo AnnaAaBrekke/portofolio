@@ -1,3 +1,12 @@
+/**
+ * SidebarProfile component renders a floating profile button that toggles a sidebar.
+ * The sidebar displays personal info, language skills, and contact links.
+ * Includes skeleton loaders for the profile image while loading.
+ *
+ * @component
+ * @returns {JSX.Element} The sidebar profile UI with contact and language information.
+ */
+
 import { useState } from "react";
 import { FiChevronDown, FiX, FiMapPin, FiGlobe, FiMail } from "react-icons/fi";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";

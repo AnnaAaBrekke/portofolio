@@ -1,3 +1,11 @@
+/**
+ * Header component displays the top navigation bar with animated link styling.
+ * Shows a skeleton loader while simulating loading state.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered header or a skeleton version during load.
+ */
+
 import React, { useEffect, useState } from "react";
 import { HeaderSkeleton } from "../utils/Skeleton";
 

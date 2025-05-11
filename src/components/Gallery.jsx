@@ -1,3 +1,16 @@
+/**
+ * GallerySection component displays a grid of images with optional links.
+ * It includes a loading state that shows skeleton loaders until all images are loaded.
+ *
+ * @component
+ * @param {Object} props
+ * @param {string} props.id - The section ID for navigation.
+ * @param {string} props.title - Title displayed above the gallery.
+ * @param {Array} props.images - Array of image objects with `src`, `alt`, and optional `link`.
+ * @param {boolean} [props.isLinked=false] - Determines if images are wrapped in anchor tags.
+ * @returns {JSX.Element} The rendered gallery section.
+ */
+
 import { useEffect, useState } from "react";
 import { SkeletonImageLoader } from "../utils/Skeleton";
 
