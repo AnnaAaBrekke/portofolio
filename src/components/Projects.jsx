@@ -10,10 +10,10 @@ import React from "react";
 import { projects } from "../data/projects";
 
 const ProjectCard = ({ title, description, images, repo, live }) => (
-  <div className="bg-white border border-border rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+  <div className="flex flex-col bg-white border border-border rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300">
     <h3 className="project-title">{title}</h3>
 
-    <div className="flex flex-wrap gap-3 justify-center mb-4">
+    <div className="flex flex-wrap gap-4 justify-center mb-4">
       {images.map((img, idx) => (
         <img
           key={idx}
@@ -25,11 +25,13 @@ const ProjectCard = ({ title, description, images, repo, live }) => (
       ))}
     </div>
 
-    <p className="text-sm p-2 text-center font-medium text-text-accent leading-relaxed">
+    {/* Flex-grow on description to push footer down */}
+    <p className="text-sm pt-2 font-medium text-text-accent leading-relaxed flex-grow">
       {description}
     </p>
 
-    <div className="flex gap-4 mt-6 justify-center">
+    {/* Margin top auto pushes this section to bottom */}
+    <div className="flex gap-4 mt-auto pt-4">
       <a
         href={repo}
         target="_blank"
@@ -49,7 +51,6 @@ const ProjectCard = ({ title, description, images, repo, live }) => (
     </div>
   </div>
 );
-
 const Projects = () => {
   return (
     <section id="projects" className="mb-24 px-4 md:px-6">
