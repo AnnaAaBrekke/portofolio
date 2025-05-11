@@ -8,7 +8,7 @@
  */
 
 import { contacts } from "../data/contacts";
-import { IconMap } from "../utils/iconMap";
+import { IconMap } from "../utils/IconMap";
 
 const Contact = () => {
   return (
