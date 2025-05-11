@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FiChevronDown, FiX, FiMapPin, FiGlobe, FiMail } from "react-icons/fi";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-import { SkeletonImageCircle } from "./Skeleton";
+import { SkeletonImageCircle } from "../utils/Skeleton";
 
 function SidebarProfile() {
   const [isOpen, setIsOpen] = useState(false);

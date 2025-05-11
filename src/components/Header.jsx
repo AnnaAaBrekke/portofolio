@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HeaderSkeleton } from "./Skeleton";
+import { HeaderSkeleton } from "../utils/Skeleton";
 
 const Header = () => {
   const [loading, setLoading] = useState(true);

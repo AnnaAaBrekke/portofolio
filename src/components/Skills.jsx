@@ -1,22 +1,5 @@
 import React from "react";
-
-const skills = [
-  { name: "JavaScript", icon: "js" },
-  { name: "HTML", icon: "html" },
-  { name: "CSS", icon: "css" },
-  { name: "React", icon: "react" },
-  { name: "Vite", icon: "vite" },
-  { name: "Tailwind", icon: "tailwind" },
-  { name: "Bootstrap", icon: "bootstrap" },
-  { name: "Cypress", icon: "cypress" },
-  { name: "Jest", icon: "jest" },
-  { name: "Figma", icon: "figma" },
-  { name: "Node.js", icon: "nodejs" },
-  { name: "Git", icon: "git" },
-  { name: "GitHub", icon: "github" },
-  { name: "NPM", icon: "npm" },
-  { name: "VS Code", icon: "vscode" },
-];
+import { skills } from "../data/skills";
 
 const SkillsSection = () => {
   return (

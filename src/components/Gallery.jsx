@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { SkeletonImageLoader } from "./Skeleton";
+import { SkeletonImageLoader } from "../utils/Skeleton";
 
 const GallerySection = ({ id, title, images, isLinked = false }) => {
   const [loading, setLoading] = useState(true);
