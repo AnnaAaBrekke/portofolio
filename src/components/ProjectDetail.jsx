@@ -21,61 +21,85 @@ const ProjectDetail = ({ project }) => {
         </Link>
       </div>
 
-      {/* Title */}
-      <h1 className="project-title">{project.title}</h1>
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 space-y-6 mt-4">
+        {/* Title */}
+        <h1 className="text-3xl font-bold text-primary">{project.title}</h1>
 
-      {/* Images */}
-      <div className="flex flex-wrap gap-4 mb-6">
-        {project.images.map((img, idx) => (
-          <img
-            key={idx}
-            src={img}
-            alt={`${project.title} Screenshot ${idx + 1}`}
-            className="project-img sm:w-[48%]"
-          />
-        ))}
-      </div>
+        {/* Images */}
+        <div className="flex flex-wrap gap-4 mb-6">
+          {project.images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={`${project.title} Screenshot ${idx + 1}`}
+              className="project-img sm:w-[48%]"
+            />
+          ))}
+        </div>
 
-      {/* Description */}
-      <p className="text-base text-text-accent leading-relaxed mb-6">
-        {project.description}
-      </p>
-
-      {/* Buttons */}
-      <div className="flex flex-wrap gap-4 mt-4">
-        {project.repo !== "Soon to Come" && (
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-repo"
-          >
-            GitHub Repo
-          </a>
+        {/* Full Description */}
+        <div className="border-t pt-6 mt-6">
+          <h2 className="text-xl font-semibold text-primary mb-2">
+            Project Overview
+          </h2>
+          <p className="text-base text-gray-700 leading-relaxed">
+            {project.description}
+          </p>
+        </div>
+        {/* Reflections & Improvements */}
+        {project.reflection && (
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-primary mb-2">
+              Reflections & Improvements
+            </h2>
+            {project.reflection.map((section, index) => (
+              <div key={index} className="space-y-1">
+                <h3 className="text-md font-semibold text-gray-800">
+                  {section.title}
+                </h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {section.content}
+                </p>
+              </div>
+            ))}
+          </div>
         )}
-        {project.live !== "Soon to Come" && (
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="live-site"
-          >
-            Live Site
-          </a>
-        )}
-        <button onClick={handleCopyLink} className="share-button">
-          {copied ? (
-            <>
-              <FiCheck className="w-4 h-4" />
-              Link copied!
-            </>
-          ) : (
-            <>
-              <FiShare2 className="w-4 h-4" />
-              Share
-            </>
+        {/* Buttons */}
+        <div className="flex flex-wrap gap-4 mt-10">
+          {project.repo && (
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="github-repo"
+            >
+              GitHub Repo
+            </a>
           )}
-        </button>
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="live-site"
+            >
+              Live Site
+            </a>
+          )}
+          <button onClick={handleCopyLink} className="share-button">
+            {copied ? (
+              <>
+                <FiCheck className="w-4 h-4" />
+                Link copied!
+              </>
+            ) : (
+              <>
+                <FiShare2 className="w-4 h-4" />
+                Share
+              </>
+            )}
+          </button>
+        </div>
       </div>
     </section>
   );

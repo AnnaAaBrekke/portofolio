@@ -24,12 +24,12 @@ const Header = () => {
   // Real header
   return (
     <header className="bg-gradient-to-r from-secondary via-button to-primary text-text-secondary shadow-md">
-      <nav className="max-w-7xl mx-auto px-2 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto p-4 flex items-center justify-between">
         <ul className="flex gap-5 md:gap-8 text-sm md:text-base font-medium tracking-wide">
           {[
+            { label: "Skills", href: "#skills" },
             { label: "My Journey", href: "#timeline" },
             { label: "Projects", href: "#projects" },
-            { label: "Skills", href: "#skills" },
             { label: "Contact", href: "#contact" },
           ].map((item) => (
             <li key={item.href}>

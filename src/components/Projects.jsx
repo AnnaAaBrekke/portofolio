@@ -11,7 +11,7 @@ import { projects } from "../data/projects";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 
-const ProjectCard = ({ id, title, description, images, repo, live }) => (
+const ProjectCard = ({ id, title, shortDescription, images, repo, live }) => (
   <div className="flex flex-col bg-white border border-border rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300">
     <h3 className="project-title">{title}</h3>
 
@@ -28,8 +28,8 @@ const ProjectCard = ({ id, title, description, images, repo, live }) => (
     </div>
 
     {/* Flex-grow on description to push footer down */}
-    <p className="text-sm pt-2 font-medium text-text-accent leading-relaxed flex-grow">
-      {description}
+    <p className="text-lg pt-2 font-medium text-text-accent leading-relaxed flex-grow">
+      {shortDescription}
     </p>
 
     {/* Margin top auto pushes this section to bottom */}
@@ -68,7 +68,7 @@ const Projects = () => {
         Projects
       </h2>
 
-      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

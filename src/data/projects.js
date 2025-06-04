@@ -2,11 +2,26 @@ export const projects = [
   {
     id: "holidaze",
     title: "Holidaze",
-    images: ["Soon to Come", "Soon to Come"],
-    description:
-      '"Holidaze" is a modern, responsive accommodation booking application.',
-    repo: "Soon to Come",
-    live: "Soon to Come",
+    images: [
+      "/images/Screenshots/Home Page Holidaze.png",
+      "/images/Screenshots/Holidaze-Booking.png",
+    ],
+    shortDescription: `A modern, responsive accommodation booking app built with React, Tailwind CSS, and Vite.`,
+    description: `"Holidaze" is a modern, responsive accommodation booking application built as part of the Front-End Development 2 course exam. This project demonstrates skills in project planning, responsive UI design, front-end development using React and Tailwind CSS, with Vite as the build tool for fast local development and optimized production builds.`,
+    repo: "https://github.com/AnnaAaBrekke/PE2-holidaze.git",
+    live: "https://holidaze-annaaab.netlify.app/",
+    reflection: [
+      {
+        title: "What did I learn?",
+        content:
+          "I learned how to plan, design, and build a large, complex booking application from scratch. I enhanced my skills with React, especially React Router and Hooks, and worked with the Noroff Holidaze API. I also learned to structure an app with multiple user roles and focused on accessibility, responsiveness, and testing.",
+      },
+      {
+        title: "What have I improved?",
+        content:
+          "Since this project is still under assessment, I haven't changed the code. However, I applied past feedback to ensure cleaner structure, DRY code, and overall better organization during development.",
+      },
+    ],
   },
   {
     id: "shopsy",
@@ -15,9 +30,22 @@ export const projects = [
       "/images/Screenshots/shopsy-home.png",
       "/images/Screenshots/shopsy-product.png",
     ],
+    shortDescription: `A React-based e-commerce store using Zustand for state and Styled Components for styling.`,
     description: `"Shopsy" is a modern e-commerce platform built with React, Vite, Zustand for state management, and styled using Styled Components CSS. It allows users to browse products, add items to the cart, and complete purchases.`,
     repo: "https://github.com/AnnaAaBrekke/ecom-store.git",
     live: "https://shopsy-ecomstore.netlify.app/",
+    reflection: [
+      {
+        title: "What did I learn?",
+        content:
+          "This was my first React project where I built a functional e-commerce app using Zustand, React Router, styled-components, and form validation with React Hook Form and Yup. It helped me practice dynamic routing, API integration, and modular component organization.",
+      },
+      {
+        title: "What have I improved?",
+        content:
+          "I added JSDoc comments, cleaned up JSX, removed unnecessary fragments, ensured hooks run at the top level, replaced index keys with stable IDs, added tests, and improved the README file.",
+      },
+    ],
   },
   {
     id: "bidvault",
@@ -26,19 +54,21 @@ export const projects = [
       "/images/Screenshots/Welome-bidVault.png",
       "/images/Screenshots/HomeBidVault.png",
     ],
+    shortDescription: `A user-friendly online auction app with Tailwind CSS and SASS styling, for bidding and item listings.`,
     description: `"BidVault", an online auction site where users can add items for bidding and place bids on other users' items. The platform is designed to be user-friendly for both registered and non-registered users. The app is styled using modern CSS frameworks, including Tailwind CSS and SASS.`,
     repo: "https://github.com/AnnaAaBrekke/BidVault.git",
     live: "https://bidvault.netlify.app/welcome",
-  },
-  {
-    id: "wherever-forever",
-    title: "Wherever Forever",
-    images: [
-      "/images/Screenshots/Skjermbilde 2024-06-06 kl. 14.03.54.png",
-      "/images/Screenshots/Skjermbilde 2024-06-06 kl. 14.05.00.png",
+    reflection: [
+      {
+        title: "What did I learn?",
+        content:
+          "I learned how to build an auction platform using API integration, user stories, and responsive design. I applied OOP principles to keep the code clean, reusable, and organized, while enhancing my skills in Tailwind CSS and SCSS.",
+      },
+      {
+        title: "What have I improved?",
+        content:
+          "I centralized error handling, corrected naming issues, added redirects for unauthorized users, made minor UX tweaks, and updated the README file.",
+      },
     ],
-    description: `"Wherever Forever" is a project to digitize the personal travel diaries of Serena, a travel blogger, and create an engaging travel blog that highlights places, activities, and unforgettable experiences.`,
-    repo: "https://github.com/NoroffFEU/AnnaAaBrekke-FED1-PE1.git",
-    live: "https://norofffeu.github.io/AnnaAaBrekke-FED1-PE1/",
   },
 ];
