@@ -3,7 +3,7 @@ export const projects = [
     id: "holidaze",
     title: "Holidaze",
     images: [
-      "/images/Screenshots/Home Page Holidaze.png",
+      "/images/Screenshots/Holiidaze-home.png",
       "/images/Screenshots/Holidaze-Booking.png",
     ],
     shortDescription: `A modern, responsive accommodation booking app built with React, Tailwind CSS, and Vite.`,
@@ -52,7 +52,7 @@ export const projects = [
     title: "BidVault",
     images: [
       "/images/Screenshots/Welome-bidVault.png",
-      "/images/Screenshots/HomeBidVault.png",
+      "/images/Screenshots/bidvault - bid.png",
     ],
     shortDescription: `A user-friendly online auction app with Tailwind CSS and SASS styling, for bidding and item listings.`,
     description: `"BidVault", an online auction site where users can add items for bidding and place bids on other users' items. The platform is designed to be user-friendly for both registered and non-registered users. The app is styled using modern CSS frameworks, including Tailwind CSS and SASS.`,

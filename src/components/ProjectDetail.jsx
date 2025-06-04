@@ -1,3 +1,21 @@
+/**
+ * ProjectDetail component displays the full details of a selected project.
+ * It includes the project title, image gallery, description, reflections, and relevant links.
+ * Users can also copy the current page link to share the project.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {Object} props.project - The project data object
+ * @param {string} props.project.title - Title of the project
+ * @param {string[]} props.project.images - Array of image URLs for the project
+ * @param {string} props.project.description - Full project description
+ * @param {Array} [props.project.reflection] - Array of reflection objects with title and content
+ * @param {string} [props.project.repo] - URL to the project's GitHub repository
+ * @param {string} [props.project.live] - URL to the live version of the project
+ *
+ * @returns {JSX.Element} Full project details layout
+ */
+
 import { Link } from "react-router-dom";
 import { FiArrowLeft, FiCheck, FiShare2 } from "react-icons/fi";
 import { useState } from "react";
@@ -13,7 +31,6 @@ const ProjectDetail = ({ project }) => {
 
   return (
     <section className="max-w-5xl mx-auto px-4 md:px-6 py-4">
-      {/* Top bar: back + share */}
       <div className="flex justify-between items-center mb-4">
         <Link to="/" className="back-link group inline-flex items-center gap-2">
           <FiArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
