@@ -9,6 +9,7 @@
 import React from "react";
 import { projects } from "../data/projects";
 import { Link } from "react-router-dom";
+import { FiArrowRight } from "react-icons/fi";
 
 const ProjectCard = ({ id, title, description, images, repo, live }) => (
   <div className="flex flex-col bg-white border border-border rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300">
@@ -51,9 +52,10 @@ const ProjectCard = ({ id, title, description, images, repo, live }) => (
       </a>
     </div>
 
-    <div>
-      <Link to={`/project/${id}`}>
-        <button>Read More</button>
+    <div className="mt-4 flex justify-end">
+      <Link to={`/project/${id}`} className="read-more-link group">
+        Read more
+        <FiArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
       </Link>
     </div>
   </div>
