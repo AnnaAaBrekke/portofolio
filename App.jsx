@@ -3,7 +3,7 @@ import SidebarProfile from "./src/components/SidebarProfile";
 import Footer from "./src/components/Footer";
 import { Routes, Route, useLocation } from "react-router-dom";
 import SingleProject from "./src/pages/SingleProject";
-import Home from "./src/pages/home";
+import Home from "./src/pages/Home";
 
 function App() {
   const location = useLocation();
