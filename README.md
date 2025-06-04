@@ -5,7 +5,6 @@
 ## 🌼 About Me 
 I'm a frontend developer with a master in education and a degree in frontend development. Since finishing my studies, I've focused on growing my skills through hands-on projects and continuous learning.
 
-- 🌐 **Portfolio**: [annabrekke.com](https://annabrekke.com/)
 - 👩🏽‍💻 **Currently working on:** React improvements and testing workflows.
 - 🌱 **Learning:** Advanced React tools, E2E testing, and TypeScript.
 - 💬 **Ask me about**: Frontend development, teaching, or travel tips.
@@ -16,8 +15,7 @@ I'm a frontend developer with a master in education and a degree in frontend dev
 [![My Skills](https://skillicons.dev/icons?i=react,js,ts,html,css,tailwind,sass,bootstrap,jest,cypress,vite,nodejs,git,github,figma,vscode,netlify,npm)](https://skillicons.dev)
 
 # 🚀 Live Demo
-
--[annabrekke.com](https://annabrekke.com/)
+[annabrekke.com](https://annabrekke.com/)
 
 # 🛠 How to Run the Project Locally
 
