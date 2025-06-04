@@ -1,8 +1,9 @@
 # Portfolio
 
-## 👋 Hey, I'm Anna Aasprong Brekke 
+## 👋 Hey, I'm Anna Aasprong Brekke
 
-## 🌼 About Me 
+## 🌼 About Me
+
 I'm a frontend developer with a master in education and a degree in frontend development. Since finishing my studies, I've focused on growing my skills through hands-on projects and continuous learning.
 
 - 👩🏽‍💻 **Currently working on:** React improvements and testing workflows.
@@ -12,9 +13,11 @@ I'm a frontend developer with a master in education and a degree in frontend dev
 - ⚡ **Fun fact**: I wrote my master's thesis about "algorithm awareness" in social studies.
 
 ## 🚀 Tools & Technologies I Use
+
 [![My Skills](https://skillicons.dev/icons?i=react,js,ts,html,css,tailwind,sass,bootstrap,jest,cypress,vite,nodejs,git,github,figma,vscode,netlify,npm)](https://skillicons.dev)
 
 # 🚀 Live Demo
+
 [annabrekke.com](https://annabrekke.com/)
 
 # 🛠 How to Run the Project Locally
