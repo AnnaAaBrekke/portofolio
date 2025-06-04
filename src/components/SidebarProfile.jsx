@@ -29,7 +29,7 @@ function SidebarProfile() {
       >
         {!thumbnailLoaded && <SkeletonImageCircle />}
         <img
-          src="/images/profile.JPG"
+          src="/images/profile.jpg"
           alt="Profile thumbnail"
           onLoad={() => setThumbnailLoaded(true)}
           className={`w-10 h-10 rounded-full object-cover border-2 border-white shadow transition-opacity duration-300 ${
