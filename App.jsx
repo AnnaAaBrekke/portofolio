@@ -1,13 +1,9 @@
 import Header from "./src/components/Header";
 import SidebarProfile from "./src/components/SidebarProfile";
-import Intro from "./src/components/Intro";
-import Timeline from "./src/components/Timeline";
-import Projects from "./src/components/Projects";
-import Contact from "./src/components/Contact";
 import Footer from "./src/components/Footer";
-import { aiImages, capturedPhotos } from "./src/data/galleryImages";
-import GallerySection from "./src/components/Gallery";
-import SkillsSection from "./src/components/Skills";
+import { Routes, Route } from "react-router-dom";
+import ProjectDetail from "./src/pages/ProjectDetail";
+import Home from "./src/pages/home";
 
 function App() {
   return (
@@ -16,22 +12,10 @@ function App() {
       <SidebarProfile />
 
       <main className="flex-1 p-6">
-        <Intro />
-        <Timeline />
-        <Projects />
-        <SkillsSection />
-        <GallerySection
-          id="media"
-          title="My Captured Photos"
-          images={capturedPhotos}
-        />
-        <GallerySection
-          id="AIimg"
-          title="AI-Created Images"
-          images={aiImages}
-          isLinked
-        />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:projectId" element={<ProjectDetail />} />
+        </Routes>
       </main>
 
       <Footer />

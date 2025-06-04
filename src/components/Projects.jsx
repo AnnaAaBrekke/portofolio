@@ -8,8 +8,9 @@
 
 import React from "react";
 import { projects } from "../data/projects";
+import { Link } from "react-router-dom";
 
-const ProjectCard = ({ title, description, images, repo, live }) => (
+const ProjectCard = ({ id, title, description, images, repo, live }) => (
   <div className="flex flex-col bg-white border border-border rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300">
     <h3 className="project-title">{title}</h3>
 
@@ -48,6 +49,12 @@ const ProjectCard = ({ title, description, images, repo, live }) => (
       >
         Live Site
       </a>
+    </div>
+
+    <div>
+      <Link to={`/project/${id}`}>
+        <button>Read More</button>
+      </Link>
     </div>
   </div>
 );
