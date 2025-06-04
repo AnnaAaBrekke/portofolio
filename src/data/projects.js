@@ -3,8 +3,8 @@ export const projects = [
     id: "holidaze",
     title: "Holidaze",
     images: [
-      "/images/Screenshots/Holiidaze-home.png",
-      "/images/Screenshots/Holidaze-Booking.png",
+      "/images/Holiidaze-home.jpg",
+      "public/images/Holidaze-Booking.jpg",
     ],
     shortDescription: `A modern, responsive accommodation booking app built with React, Tailwind CSS, and Vite.`,
     description: `"Holidaze" is a modern, responsive accommodation booking application built as part of the Front-End Development 2 course exam. This project demonstrates skills in project planning, responsive UI design, front-end development using React and Tailwind CSS, with Vite as the build tool for fast local development and optimized production builds.`,
@@ -26,10 +26,7 @@ export const projects = [
   {
     id: "shopsy",
     title: "Shopsy",
-    images: [
-      "/images/Screenshots/shopsy-home.png",
-      "/images/Screenshots/shopsy-product.png",
-    ],
+    images: ["/images/shopsy-home.jpg", "/images/shopsy-product.jpg"],
     shortDescription: `A React-based e-commerce store using Zustand for state and Styled Components for styling.`,
     description: `"Shopsy" is a modern e-commerce platform built with React, Vite, Zustand for state management, and styled using Styled Components CSS. It allows users to browse products, add items to the cart, and complete purchases.`,
     repo: "https://github.com/AnnaAaBrekke/ecom-store.git",
@@ -50,10 +47,7 @@ export const projects = [
   {
     id: "bidvault",
     title: "BidVault",
-    images: [
-      "/images/Screenshots/Welome-bidVault.png",
-      "/images/Screenshots/bidvault - bid.png",
-    ],
+    images: ["/images/Welome-bidVault.jpg", "/images/bidvault - bid.jpg"],
     shortDescription: `A user-friendly online auction app with Tailwind CSS and SASS styling, for bidding and item listings.`,
     description: `"BidVault", an online auction site where users can add items for bidding and place bids on other users' items. The platform is designed to be user-friendly for both registered and non-registered users. The app is styled using modern CSS frameworks, including Tailwind CSS and SASS.`,
     repo: "https://github.com/AnnaAaBrekke/BidVault.git",

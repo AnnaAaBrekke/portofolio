@@ -57,7 +57,7 @@ function SidebarProfile() {
                 </div>
               )}
               <img
-                src="/images/profile.JPG"
+                src="/images/profile.jpg"
                 alt="Profile"
                 onLoad={() => setProfileLoaded(true)}
                 className={`w-32 h-36 rounded-full mx-auto mb-4 border-2 border-gray-300 shadow transition-opacity duration-300 ${
