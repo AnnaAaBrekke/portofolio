@@ -1,15 +1,25 @@
-import { Link, useParams } from "react-router-dom";
-import { projects } from "../data/projects";
-import { FiArrowLeft } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import { FiArrowLeft, FiCheck, FiShare2 } from "react-icons/fi";
+import { useState } from "react";
 
 const ProjectDetail = ({ project }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section className="max-w-5xl mx-auto px-4 md:px-6 py-4">
-      {/* Back link */}
-      <Link to="/" className="back-link mb-6 group">
-        <FiArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-        Back to Projects
-      </Link>
+      {/* Top bar: back + share */}
+      <div className="flex justify-between items-center mb-4">
+        <Link to="/" className="back-link group inline-flex items-center gap-2">
+          <FiArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+          Back to Projects
+        </Link>
+      </div>
 
       {/* Title */}
       <h1 className="project-title">{project.title}</h1>
@@ -53,6 +63,19 @@ const ProjectDetail = ({ project }) => {
             Live Site
           </a>
         )}
+        <button onClick={handleCopyLink} className="share-button">
+          {copied ? (
+            <>
+              <FiCheck className="w-4 h-4" />
+              Link copied!
+            </>
+          ) : (
+            <>
+              <FiShare2 className="w-4 h-4" />
+              Share
+            </>
+          )}
+        </button>
       </div>
     </section>
   );
