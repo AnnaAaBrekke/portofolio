@@ -8,9 +8,9 @@ function Home() {
   return (
     <>
       <Intro />
+      <SkillsSection />
       <Timeline />
       <Projects />
-      <SkillsSection />
       <Contact />
     </>
   );

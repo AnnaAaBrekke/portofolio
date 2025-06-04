@@ -13,7 +13,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="mb-24 px-6 md:px-12 py-12 rounded-3xl bg-gradient-to-br from-secondary/20 to-primary/10 shadow-lg"
+      className="mb-10 px-6 md:px-12 py-12 rounded-3xl bg-gradient-to-br from-secondary/20 to-primary/10 shadow-lg"
     >
       <h2 className="skills-title animate-fade-up">Tools & Technologies</h2>
 
