@@ -60,6 +60,7 @@ const ProjectCard = ({ id, title, description, images, repo, live }) => (
     </div>
   </div>
 );
+
 const Projects = () => {
   return (
     <section id="projects" className="mb-24 px-4 md:px-6">
@@ -67,7 +68,7 @@ const Projects = () => {
         Projects
       </h2>
 
-      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2">
+      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 justify-center">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

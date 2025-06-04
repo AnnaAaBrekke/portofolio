@@ -30,7 +30,6 @@ const Header = () => {
             { label: "My Journey", href: "#timeline" },
             { label: "Projects", href: "#projects" },
             { label: "Skills", href: "#skills" },
-            { label: "Media", href: "#media" },
             { label: "Contact", href: "#contact" },
           ].map((item) => (
             <li key={item.href}>
