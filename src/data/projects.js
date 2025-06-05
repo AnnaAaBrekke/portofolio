@@ -48,7 +48,7 @@ export const projects = [
     id: "bidvault",
     title: "BidVault",
     images: ["/images/Welome-bidVault.jpg", "/images/bidvault - bid.jpg"],
-    shortDescription: `A user-friendly online auction app with Tailwind CSS and SASS styling, for bidding and item listings.`,
+    shortDescription: `A online auction app built with OOP in vanilla JavaScript, styled using Tailwind CSS and SASS.`,
     description: `"BidVault", an online auction site where users can add items for bidding and place bids on other users' items. The platform is designed to be user-friendly for both registered and non-registered users. The app is styled using modern CSS frameworks, including Tailwind CSS and SASS.`,
     repo: "https://github.com/AnnaAaBrekke/BidVault.git",
     live: "https://bidvault.netlify.app/welcome",

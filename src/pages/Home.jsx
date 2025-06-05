@@ -8,8 +8,8 @@ function Home() {
   return (
     <>
       <Intro />
-      <SkillsSection />
       <Timeline />
+      <SkillsSection />
       <Projects />
       <Contact />
     </>

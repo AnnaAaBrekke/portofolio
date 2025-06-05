@@ -27,8 +27,8 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto p-4 flex items-center justify-between">
         <ul className="flex gap-5 md:gap-8 text-sm md:text-base font-medium tracking-wide">
           {[
-            { label: "Skills", href: "#skills" },
             { label: "My Journey", href: "#timeline" },
+            { label: "Skills", href: "#skills" },
             { label: "Projects", href: "#projects" },
             { label: "Contact", href: "#contact" },
           ].map((item) => (

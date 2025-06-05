@@ -15,7 +15,7 @@ export const introCards = [
     id: "handball",
     title: "Handball Captain",
     description:
-      "Captain at Nordstrand Damer Elite, competing in Norway’s first division.",
+      "Player and captain at Nordstrand Damer Elite",
   },
   {
     id: "teacher",
