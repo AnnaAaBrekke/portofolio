@@ -2,10 +2,7 @@ export const projects = [
   {
     id: "holidaze",
     title: "Holidaze",
-    images: [
-      "/images/Holiidaze-home.jpg",
-      "public/images/Holidaze-Booking.jpg",
-    ],
+    images: ["/images/Holiidaze-home.jpg", "/images/Holidaze-Booking.jpg"],
     shortDescription: `A modern, responsive accommodation booking app built with React, Tailwind CSS, and Vite.`,
     description: `"Holidaze" is a modern, responsive accommodation booking application built as part of the Front-End Development 2 course exam. This project demonstrates skills in project planning, responsive UI design, front-end development using React and Tailwind CSS, with Vite as the build tool for fast local development and optimized production builds.`,
     repo: "https://github.com/AnnaAaBrekke/PE2-holidaze.git",
