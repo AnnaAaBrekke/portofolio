@@ -1,6 +1,8 @@
 # Portfolio
 
-## 👋 Hey, I'm Anna Aasprong Brekke
+## 👋 Hey, I'm Anna Aasprong Brekke ([annabrekke.com](https://annabrekke.com/))
+
+<img width="1422" alt="Portfolio-screenshot-1v1" src="https://github.com/user-attachments/assets/98e51717-20db-4eb9-97c1-2a43fd0abfbe" />
 
 ## 🌼 About Me
 
@@ -16,9 +18,6 @@ I'm a frontend developer with a master in education and a degree in frontend dev
 
 [![My Skills](https://skillicons.dev/icons?i=react,js,ts,html,css,tailwind,sass,bootstrap,jest,cypress,vite,nodejs,git,github,figma,vscode,netlify,npm)](https://skillicons.dev)
 
-# 🚀 Live Demo
-
-[annabrekke.com](https://annabrekke.com/)
 
 # 🛠 How to Run the Project Locally
 
