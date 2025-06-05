@@ -5,18 +5,25 @@ import prettierPlugin from "eslint-plugin-prettier";
 
 export default [
   {
+    ignores: ["dist/**", "node_modules/**"],
+  },
+
+  {
+    ...pluginJs.configs.recommended,
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+      },
     },
   },
-  pluginJs.configs.recommended,
+
   {
+    plugins: {
+      prettier: prettierPlugin,
+    },
     rules: {
       ...prettier.rules,
       "prettier/prettier": "error",
-    },
-    plugins: {
-      prettier: prettierPlugin,
     },
   },
 ];

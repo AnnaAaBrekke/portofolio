@@ -1,8 +1,13 @@
 /* Custom Styles */
-@import "./_components.scss";
-@import "./_typography.scss";
 @import "./_buttons.scss";
+@import "./_components.scss";
+@import "./_skeleton.scss";
+@import "./_typography.scss";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-100 font-sora text-text;
+}

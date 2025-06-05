@@ -14,3 +14,15 @@ a.live-site {
   @apply bg-primary text-text-secondary hover:bg-button-hover;
   @include button-style();
 }
+
+.read-more-link {
+  @apply text-sm text-primary font-semibold hover:underline inline-flex items-center gap-1 mt-2;
+}
+
+.back-link {
+  @apply text-sm text-text-accent font-semibold hover:underline inline-flex items-center gap-1;
+}
+
+.share-button {
+  @apply text-sm text-primary font-medium hover:underline inline-flex items-center gap-2 transition-colors;
+}

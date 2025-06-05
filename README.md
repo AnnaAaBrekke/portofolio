@@ -1,30 +1,24 @@
 # Portfolio
 
-<img width="606" alt="landingPagePortfolio" src="https://github.com/user-attachments/assets/c51f85a7-6304-4768-b611-915add5c73f1" />
-
-<img width="606" alt="pagePortfolio" src="https://github.com/user-attachments/assets/2c35f477-a4fd-421b-8282-ddb7046b8bb2" />
-
-# 👋 Hey, I'm Anna Aasprong Brekke
+## 👋 Hey, I'm Anna Aasprong Brekke
 
 ## 🌼 About Me
 
-I'm a frontend development student in my final semester of studies. With graduation approaching, I’m excited about what the future holds. Besides my interest for coding, I’m an active handball player and enjoy traveling. I also hold a master’s degree in primary school education and work as a high school teacher.
+I'm a frontend developer with a master in education and a degree in frontend development. Since finishing my studies, I've focused on growing my skills through hands-on projects and continuous learning.
 
-- 👩🏽‍💻 **I’m currently working on**: Enhancing my JavaScript skills and optimizing workflow testing.
-- 🌱 **I’m currently learning**: React and Typescript.
-- 💬 **Ask me about**: Frontend development, teaching, handball, and travel tips.
+- 👩🏽‍💻 **Currently working on:** React improvements and testing workflows.
+- 🌱 **Learning:** Advanced React tools, E2E testing, and TypeScript.
+- 💬 **Ask me about**: Frontend development, teaching, or travel tips.
 - 📫 **How to reach me**: [annabrekke98@gmail.com](mailto:annabrekke98@gmail.com)
 - ⚡ **Fun fact**: I wrote my master's thesis about "algorithm awareness" in social studies.
 
-## Tools & Technologies I Use
+## 🚀 Tools & Technologies I Use
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,discord,figma,netlify,github,babel,cypress,jest,nodejs,git,npm,vite,vscode)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,js,ts,html,css,tailwind,sass,bootstrap,jest,cypress,vite,nodejs,git,github,figma,vscode,netlify,npm)](https://skillicons.dev)
 
 # 🚀 Live Demo
 
-You can view the live version of this portfolio hosted on Netlify:
-
-- [https://annaaasprongbrekke.netlify.app/](https://annaaasprongbrekke.netlify.app/)
+[annabrekke.com](https://annabrekke.com/)
 
 # 🛠 How to Run the Project Locally
 
@@ -32,8 +26,17 @@ To run this project locally, follow these instructions:
 
 #### Prerequisites:
 
-- Node.js (version 14 or higher)
-- npm (Node package manager)
+Make sure you have the following installed:
+
+```bash
+node -v
+npm -v
+```
+
+This project is also built with:
+
+- React (UI library)
+- Vite (Development and build tool)
 
 ### Step 1: Clone the repository
 
